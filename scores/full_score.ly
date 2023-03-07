@@ -5,8 +5,8 @@
 
 \book {
   \bookpart {
-    \section "Miserere"
-    % \addTocEntry
+    \section "Miserere · Et secundam"
+    \addTocEntry
     \paper { indent = 3\cm }
     \score {
       <<
@@ -81,7 +81,7 @@
         \new FiguredBass { \MiserereBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 4 = 60 } % 120 – 80
     }
   }
 }

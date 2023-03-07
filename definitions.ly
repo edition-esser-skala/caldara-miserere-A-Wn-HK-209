@@ -7,6 +7,18 @@
 
 
 tempoMiserere = \tempoMarkup "Adagio"
+  tempoEtSecundam = \tempoMarkup "[Andante]"
+  tempoEtSecundamB = \tempoMarkup "Adagio"
+tempoAmplius = \tempoMarkup "[Andante]"
+tempoTibiSoli = \tempoMarkup "[Larghetto]"
+tempoEcceEnim = \tempoMarkup "[Adagio]"
+  tempoEcceEnimB = \tempoMarkup "[Allegretto]"
+  tempoEcceEnimC = \tempoMarkup "Adagio"
+tempoAverte = \tempoMarkup "[Andante]"
+tempoCorMundum = \tempoMarkup "[Adagio]"
+tempoNeProicias = \tempoMarkup "[Larghetto]"
+tempoDomine = \tempoMarkup "[Andante]"
+tempoSacrificium = \tempoMarkup "[Adagio]"
 
 
 \include "notes/cnto.ly"
