@@ -84,40 +84,84 @@
   %     \midi { \tempo 4 = 60 } % 120 – 80
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Amplius lava me"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #20
+  %     system-system-spacing.minimum-distance = #20
+  %     systems-per-page = #4
+  %   }
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \AmpliusSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \AmpliusSopranoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \AmpliusAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \AmpliusAltoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \AmpliusOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \AmpliusBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 90 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Amplius"
+    \subsection "Tibi soli peccavi"
     \addTocEntry
     \paper {
-      system-system-spacing.basic-distance = #20
-      system-system-spacing.minimum-distance = #20
-      systems-per-page = #4
+      system-system-spacing.basic-distance = #22
+      system-system-spacing.minimum-distance = #22
+      systems-per-page = #3
+      page-count = #2
     }
     \score {
       <<
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \TibiSoliViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \TibiSoliViolinoII
+            }
+          >>
+        >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \AmpliusSoprano }
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \TibiSoliBasso }
           }
-          \new Lyrics \lyricsto Soprano \AmpliusSopranoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \AmpliusAlto }
-          }
-          \new Lyrics \lyricsto Alto \AmpliusAltoLyrics
+          \new Lyrics \lyricsto Basso \TibiSoliBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \AmpliusOrgano
+            \TibiSoliOrgano
           }
         >>
-        \new FiguredBass { \AmpliusBassFigures }
+        \new FiguredBass { \TibiSoliBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 2 = 150 }
     }
   }
 }

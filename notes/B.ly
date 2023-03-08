@@ -73,3 +73,89 @@ MiserereBassoLyrics = \lyricmode {
   me --
   am. %35 finis
 }
+
+TibiSoliBasso = {
+  \relative c {
+    \clef bass
+    \key b \major \time 3/2 \autoBeamOff \tempoTibiSoli
+      \set Score.currentBarNumber = #61
+    R1.*4 %64
+    \mvTr b'1.\pE^\solo %65
+    f
+    d2. c4 b2
+    as'1.
+    g1 r2
+    R1. %70
+    g2 c b
+    a!4( g) f2 b
+    es,1.
+    d1 r2
+    R1. %75
+    r2 d'4 c b a
+    g2 c4( b) a g
+    fis2. fis4  g2
+    a d, d'
+    b g g %80
+    es c c'~
+    c a d,
+    b'1.
+    as2 fis g~
+    g fis2.\trill e8[ fis] %85
+    g1 r2
+    R1.
+    r2 b d,
+    es( c) f
+    d b b'4 a %90
+    g2 c2. b4
+    a2 f f
+    d b b'~
+    b as2. as4
+    g2. f4 g a %95
+    b2 d, b
+    g'2. f4 es g
+    f2. f4 g4. a8
+    b4. es,8 f1
+    b, r2 %100
+    R1.*3
+    R1.\fermata \bar "||" %104 finis
+  }
+}
+
+TibiSoliBassoLyrics = \lyricmode {
+  Ti -- %65
+  bi
+  so -- li pec --
+  ca --
+  vi,
+  %70
+  et ma -- lum
+  co -- ram te
+  fe --
+  ci,
+  %75
+  ut iu -- sti -- fi --
+  ce -- ris __ in ser --
+  mo -- ni -- bus
+  tu -- is, et
+  vin -- cas, et %80
+  vin -- cas cum __
+  iu -- di --
+  ca --
+  _ _ _
+  _ _ %85
+  ris,
+
+  ut iu --
+  sti -- fi --
+  ce -- ris in ser -- %90
+  mo -- ni -- bus
+  tu -- is, et
+  vin -- cas cum __
+  iu -- di --
+  ca -- _ _ _ %95
+  _ _ _
+  _ _ _ _
+  _ _ _ _
+  _ _ _
+  ris. %100 finis
+}

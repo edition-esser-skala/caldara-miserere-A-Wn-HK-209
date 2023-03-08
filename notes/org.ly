@@ -141,51 +141,106 @@ AmpliusBassFigures = \figuremode {
   r1 %60 finis
 }
 
-%     \key b \major \time 3/2 \tempoTibiSoli
-%       \mvTr b2\pE-\solo d b \noBreak
-%     f' f, f'
-%     b, d b
-%     es f f,
-%     b d b
-%     f' f, f'
-%     b, d b
-%     c d b
-%     es g es
-%     b' d b
-%     es, c es
-%     f d b
-%     c a f
-%     b d b
-%     f' a f
-%     b, d b
-%     es c c'
-%     d, c b
-%     a d d,
-%     g' g, g'
-%     c, c c'
-%     d fis d
-%     g, b g
-%     c d es
-%     d4 c d2 d,
-%     g b g
-%     f! a f
-%     b d b
-%     es c f
-%     d b d
-%     es c es
-%     f f, a
-%     b d b
-%     c c d
-%     es g es
-%     b d b
-%     es c es
-%     f a f
-%     b,4 es f2 f,
-%     b d b
-%     f' f, f'
-%     b, d b
-%     es f f, \noBreak
-%     b r r\fermata \bar "||"
+TibiSoliOrgano = {
+  \relative c {
+    \clef bass
+    \key b \major \time 3/2 \tempoTibiSoli
+      \set Score.currentBarNumber = #61
+    \mvTr b2\fE-\solo d b
+    f' f, f'
+    b, d b
+    es f f,
+    b d\pE b %65
+    f' f, f'
+    b, d b
+    c d b
+    es g\fE es
+    b' d b %70
+    es, c\pE es
+    f d b
+    c a f
+    b d\fE b
+    f' a f %75
+    b, d\pE b
+    es c c'
+    d, c b
+    a d d,
+    g' g, g' %80
+    c, c, c'
+    d fis d
+    g, b g
+    c d es
+    d4 c d2 d, %85
+    g b\fE g
+    f! a f
+    b d\pE b
+    es c f
+    d b d %90
+    es c es
+    f f, a
+    b d b
+    c c d
+    es g es %95
+    b d b
+    es c es
+    f a f
+    b,4 es f2 f,
+    b d\fE b %100
+    f' f, f'
+    b, d\pE b
+    es f f,
+    b r r\fermata \bar "||" %104 finis
+  }
+}
+
+TibiSoliBassFigures = \figuremode {
+  r1. %61
+  r
+  r
+  <6 5>
+  r %65
+  r
+  r
+  <6->2 <5-> <7->
+  r1.
+  r %70
+  r
+  r2 <6>1
+  r2 <5> <7>
+  r1.
+  r %75
+  r
+  r2 <5> <6>
+  <_+> <\t> <6>
+  <7> <_+>1
+  r1. %80
+  r
+  <7 [_+]>
+  r
+  <6->2 <[5!] _+>1
+  <4>2 <[_+]>1 %85
+  r <6!>2
+  r1.
+  r
+  <6 5>
+  <10 9>2 <[8]>1 %90
+  <10 9>2 <[8]>1
+  <10 9>2 <[8]>1
+  <10 9>2 <[6]>1
+  <7>2 <6-> <[\t]>
+  r1. %95
+  r
+  r
+  r
+  r2 \bo <[6 4]> <\t \t>4 \bc <[5 3]>
+  r1. %100
+  r
+  r
+  <6 5>
+  r %104 finis
+}
+
+
 %     \time 4/4 \key g \dorian \tempoEcceEnim
 %       r4 \mvTr f'2\fE-\tutti f4 \noBreak
 %     es2 d

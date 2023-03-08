@@ -113,8 +113,7 @@ AmpliusSopranoLyrics = \lyricmode {
 
 
 
-% Ti -- bi so -- li pec -- ca -- vi, et ma -- lum co -- ram te fe -- ci;
-% ut iu -- sti -- fi -- ce -- ris in ser -- mo -- ni -- bus tu -- is, et vin -- cas cum iu -- di -- ca -- ris.
+
 % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
 % et in pec -- ca -- tis con -- ce -- pit me ma -- ter me -- a.
 % Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
