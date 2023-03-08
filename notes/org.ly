@@ -80,32 +80,67 @@ MiserereBassFigures = \figuremode {
   <[_!]>2. %35 finis
 }
 
-% \time 4/4 \tempoAmplius \newSpacingSection
-%       \mvTr g'8\pE-\solo b16 a g8 b16 a g8 g, r4 \noBreak
-%     \clef "treble_8" c'8 es16 d c8 es16 d c4 r
-%     c8 c h g \clef bass c, d es4
-%     d8 es d c b a b g
-%     c d es c f g a f
-%     g f g es f g16 a b8 d,
-%     es c f f, b c d b
-%     es d es c d g c,16 d es f
-%     g8 g, b g c a d d,
-%     g' g, g' fis g fis g f?
-%     es d c g d' c d d,
-%     g g' f! e d e f d
-%     g f e c f f a f
-%     b b, r16 b' a b g8 f g g,
-%     a b a g f e f d
-%     g' g, b' a g c, d e
-%     f g a f b c b a
-%     g f e c f b c c,
-%     f g f e d e f d
-%     g f g e f e f d
-%     e d e a, d a16 g f8 d
-%     g e a' a, d f16 g a8 a,
-%     d c b a b a g f
-%     g' f e d a' g a a, \noBreak
-%     d1\fermata \bar "||"
+AmpliusOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \tempoAmplius
+      \set Score.currentBarNumber = #36
+    \mvTr g'8\pE-\solo b16 a g8 b16 a g8 g, r4
+    \clef "treble_8" c'8 es16 d c8 es16 d c4 r
+    c8 c h g \clef bass c, d es4
+    d8 es d c b a b g
+    c d es c f g a f %40
+    g f g es f g16 a b8 d,
+    es c f f, b c d b
+    es d es c d g c,16 d es f
+    g8 g, b g c a d d,
+    g' g, g' fis g fis g f? %45
+    es d c g d' c d d,
+    g g' f! e d e f d
+    g f e c f f a f
+    b b, r16 b' a b g8 f g g,
+    a b a g f e f d %50
+    g' g, b' a g c, d e
+    f g a f b c b a
+    g f e c f b c c,
+    f g f e d e f d
+    g f g e f e f d %55
+    e d e a, d a16 g f8 d
+    g e a' a, d f16 g a8 a,
+    d c b a b a g f
+    g' f e d a' g a a, \noBreak
+    d1\fermata \bar "||" %60 finis
+  }
+}
+
+AmpliusBassFigures = \figuremode {
+  r1 %36
+  \bo <[_-]>
+  <_->4 <6>8 \bc <[_!]>4. <6>4
+  <_+>2 \bo <[6]>
+  \bc <[_-]>1 %40
+  <7>4 <6-> <7->2
+  <[6]>1
+  <7>4 <6> <7 _+> <[_-]>
+  <6- 4>8 <5 3>4. \bo <[_-]>4 \bc <[_+]>
+  r <6->8 <6> <6-> <6>4 \bo <[6]>8 %45
+  r4 \bo <[_-]> <_+>2
+  r4 <6>8 <6\\> r2
+  r4 <[7]> <4>8 <3>4.
+  <7>4 r16 <6>8. <5>4 <6>
+  <_+>2 <6> %50
+  r2 <[7]>
+  r1
+  r4 <[7]>2.
+  r1
+  <7>4 <6> <7> <6> %55
+  <7> <6\\>4. \bo <[_+]>8 <6>4
+  r4 <_+>2 <_+>4
+  r1
+  r2 \bo <[_+]>
+  r1 %60 finis
+}
+
 %     \key b \major \time 3/2 \tempoTibiSoli
 %       \mvTr b2\pE-\solo d b \noBreak
 %     f' f, f'

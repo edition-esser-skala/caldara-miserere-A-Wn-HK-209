@@ -72,3 +72,41 @@ MiserereAltoLyrics = \lyricmode {
   me --
   am. %35 finis
 }
+
+AmpliusAlto = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoAmplius
+      \set Score.currentBarNumber = #36
+    R1*11 %46
+    r2 \mvTr a'8.\pE^\solo d,16 d8 d
+    b' b b b b a a4~
+    a8 d, g4.( b16[ a)] g([ f)] e([ d)]
+    cis8 cis r4 a'8. d,16 d8 d %50
+    d d r4 b'8. e,16 f8 g
+    a g f8. a16 d,4 b'8. b16
+    b4. a16([ g)] a[ g f g] e8.[\trill d32 e]
+    f4 r a8 d, d d
+    b'4~ b16[ a b c] a4~ a16[ g a b] %55
+    g4~ g16[ f g a] f8 e a d,
+    b'16([ a)] g([ f)] e4 d8 a' cis,8.([ h?32 cis)]
+    d2 r
+    R1
+    R\fermata \bar "||" %60 finis
+  }
+}
+
+AmpliusAltoLyrics = \lyricmode {
+  Quo -- ni -- am in -- %47
+  i -- qui -- ta -- tem me -- am e --
+  go, e -- go co --
+  gno -- sco, et pec -- ca -- tum %50
+  me -- um, et pec -- ca -- tum
+  me -- um con -- tra me, con -- tra
+  me est sem -- _
+  per, et pec -- ca -- tum
+  me -- _ %55
+  _ _ um con -- tra
+  me est sem -- per, est sem --
+  per. %58 finis
+}

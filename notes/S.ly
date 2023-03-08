@@ -74,10 +74,45 @@ MiserereSopranoLyrics = \lyricmode {
   am. %35 finis
 }
 
-% Am -- pli -- us la -- va me ab in -- i -- qui -- ta -- te me -- a,
-% et a pec -- ca -- to me -- o mun -- da me.
-% Quo -- ni -- am in -- i -- qui -- ta -- tem me -- am e -- go co -- gno -- sco,
-% et pec -- ca -- tum me -- um con -- tra me est sem -- per.
+AmpliusSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoAmplius
+      \set Score.currentBarNumber = #36
+    r2 \mvTr g'8\pE^\solo b16 a g8 b16([ a)]
+    g4 r c8 es16 d c8 es16([ d)]
+    c4 g'8. f16 es8. d16 c([ b!)] a([ g)]
+    d'8.([\trill c16)] d4 r8 d g f!
+    es8.([ d16)] c([ d b c)] a([ g)] f8 f'4~ %40
+    f8 b, es2 d16([ c d es)]
+    c4. b8 b4 r8 d
+    g c, c c c b16 b es8 es
+    es d g8. f16 es([ d)] c([ b)] a8. g16
+    g4 es'8 d es([ d)] r d %45
+    g8. f16 es([ d)] c([ b)] a8 b16([ c)] a8. g16
+    g4 r r2
+    R1*12 %59
+    R1\fermata \bar "||" %60 finis
+  }
+}
+
+AmpliusSopranoLyrics = \lyricmode {
+  Am -- pli -- us la -- va %36
+  me, am -- pli -- us la -- va
+  me ab in -- i -- qui -- ta -- te
+  me -- a, et a pec --
+  ca -- to __ me -- o mun -- %40
+  da, mun -- da, __
+  mun -- da me, et
+  a pec -- ca -- to me -- o, pec -- ca -- to
+  me -- o mun -- da, mun -- da, mun -- da
+  me, mun -- da me, __ et %45
+  a pec -- ca -- to me -- o mun -- da
+  me. %47 finis
+}
+
+
+
 % Ti -- bi so -- li pec -- ca -- vi, et ma -- lum co -- ram te fe -- ci;
 % ut iu -- sti -- fi -- ce -- ris in ser -- mo -- ni -- bus tu -- is, et vin -- cas cum iu -- di -- ca -- ris.
 % Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
