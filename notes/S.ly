@@ -211,8 +211,7 @@ EcceEnimSopranoLyrics = \lyricmode {
 
 
 
-% A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
-% et o -- mnes in -- i -- qui -- ta -- tes me -- as de -- le.
+
 % Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.
 % Ne pro -- i -- ci -- as me a fa -- ci -- e tu -- a, et spi -- ri -- tum san -- ctum tu -- um ne au -- fe -- ras a me.
 % Red -- de mi -- hi lae -- ti -- ti -- am sa -- lu -- ta -- ris tu -- i,

@@ -207,3 +207,83 @@ EcceEnimAltoLyrics = \lyricmode {
   a --
   ta. %164 finis
 }
+
+AverteAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 3/4 \autoBeamOff \tempoAverte
+      \set Score.currentBarNumber = #165
+    R2.*7 %171
+    \mvTr g'4\pE^\solo es d8([ c)]
+    as'4. b8 as4
+    as2 g4
+    r c, c %175
+    e f g8.([\trill f32 g)]
+    as4. g8 f4~
+    f e4.(\trill d16[ e)]
+    f2 r4
+    r r f~ %180
+    f es!8([ d)] es4~
+    es d8([ c)] d4~
+    d c8([ h] c4)
+    f2 f4
+    f es2 %185
+    as4. b8[ g f]
+    g4. as8[ f es]
+    f4. g8[ es d]
+    es4. f8[ d c]
+    d4. d8 c8.[ d16] %190
+    es8.[ f16] d4.\trill c16([ d)]
+    es2 r4
+    R2.*3 %195
+    g4 es d8([ c)]
+    as'4 as8 g f es
+    d([ c)] d4 r
+    c c4.\trill h16([ c)]
+    d4 d4.\trill \once \slurDashed c16[( d]) %200
+    es4 es4.\trill d16([ es)]
+    f4 f4.\trill es16([ f)]
+    g4 g4.\trill f16([ g)]
+    as4. b16[ as] g8[ as16( f)]
+    es8.[ d16] d4.\trill c16([ d)] %205
+    c2 r4
+    R2.*7 %213
+    R2.\fermata \bar "||" %214 finis
+  }
+}
+
+AverteAltoLyrics = \lyricmode {
+  A -- ver -- te __ %172
+  fa -- ci -- em
+  tu -- am
+  a pec -- %175
+  ca -- _ _
+  _ _ tis __
+  me --
+  is,
+  et __ %180
+  o -- mnes __
+  in -- i --
+  qui --
+  ta -- tes
+  me -- as %185
+  de -- _
+  _ _
+  _ _
+  _ _
+  _ _ _ %190
+  _ _ _
+  le,
+
+  et o -- mnes %196
+  in -- i -- qui -- ta -- tes
+  me -- as
+  de -- _ _
+  _ _ _ %200
+  _ _ _
+  _ _ _
+  _ _ _
+  _ _ _
+  _ _ _ %205
+  le. %296 finis
+}

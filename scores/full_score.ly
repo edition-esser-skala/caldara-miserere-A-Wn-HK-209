@@ -164,83 +164,126 @@
   %     \midi { \tempo 2 = 150 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Ecce enim"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "cnto"
+  %           \EcceEnimCornetto
+  %         }
+  %         \new Staff {
+  %           \set Staff.instrumentName = "fag"
+  %           \EcceEnimFagotto
+  %         }
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "trb"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \EcceEnimTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \EcceEnimTromboneII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \EcceEnimViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \EcceEnimViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \EcceEnimSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \EcceEnimSopranoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \EcceEnimAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \EcceEnimAltoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \EcceEnimTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \EcceEnimTenoreLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \EcceEnimBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \EcceEnimBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \EcceEnimOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \EcceEnimBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 } % 300 – 60
+  %   }
+  % }
   \bookpart {
-    \subsection "Ecce enim"
+    \subsection "Averte faciem tuam"
     \addTocEntry
+    \paper {
+      system-system-spacing.basic-distance = #22
+      system-system-spacing.minimum-distance = #22
+      systems-per-page = #3
+    }
     \score {
       <<
-        \new StaffGroup <<
-          \new Staff {
-            \set Staff.instrumentName = "cnto"
-            \EcceEnimCornetto
-          }
-          \new Staff {
-            \set Staff.instrumentName = "fag"
-            \EcceEnimFagotto
-          }
-        >>
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "trb"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \EcceEnimTromboneI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \EcceEnimTromboneII
-            }
-          >>
-        >>
         \new StaffGroup <<
           \new GrandStaff <<
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \EcceEnimViolinoI
+              \AverteViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \EcceEnimViolinoII
+              \AverteViolinoII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \EcceEnimSoprano }
-          }
-          \new Lyrics \lyricsto Soprano \EcceEnimSopranoLyrics
-
-          \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \EcceEnimAlto }
+            \new Voice = "Alto" { \dynamicUp \AverteAlto }
           }
-          \new Lyrics \lyricsto Alto \EcceEnimAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \EcceEnimTenore }
-          }
-          \new Lyrics \lyricsto Tenore \EcceEnimTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \EcceEnimBasso }
-          }
-          \new Lyrics \lyricsto Basso \EcceEnimBassoLyrics
+          \new Lyrics \lyricsto Alto \AverteAltoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \EcceEnimOrgano
+            \AverteOrgano
           }
         >>
-        \new FiguredBass { \EcceEnimBassFigures }
+        \new FiguredBass { \AverteBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 } % 300 – 60
+      \midi { \tempo 4 = 90 }
     }
   }
 }

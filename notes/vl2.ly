@@ -141,3 +141,53 @@ EcceEnimViolinoII = {
     a1\fermata \bar "||" %164 finis
   }
 }
+
+AverteViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 3/4 \tempoAverte
+      \set Score.currentBarNumber = #165
+    R2.
+    c'4\fE as g8 f
+    d'2.~
+    d8 d es d c h
+    c4. es8 d c
+    h4 h4.\trill a!16( h) %170
+    c4 c4. h8
+    c4 r r
+    R2.
+    f4\pE d c8( b!)
+    c2. %175
+    b
+    c4. b8 as4
+    g8 g c b as g
+    as g f4 r
+    r8 f b as g f %180
+    g2 r4
+    R2.*9 %190
+    r8 c'\fE b as g f
+    g2.~
+    g8 g as g f es
+    f2.~
+    f8 f g f es d %195
+    es2 g4~\pE
+    g f8 es d c
+    h a g4 r
+    R2.
+    r4 r d'~ %200
+    d c8 h c4
+    r r d~
+    d c8 h c4
+    r r c~
+    c h8 a h4 %205
+    c r r
+    c\fE as g8 f
+    d'2.~
+    d8 d es d c h
+    c4. es8 d c %210
+    h4 h4.\trill a16( h)
+    c4 c4. h8
+    c8 d16( es) d4.\trill c16( d)
+    c2 r4\fermata \bar "||" %214 finis
+  }
+}

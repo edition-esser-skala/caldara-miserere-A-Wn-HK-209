@@ -371,60 +371,119 @@ EcceEnimBassFigures = \figuremode {
   <_!>1 %164 finis
 }
 
+AverteOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 3/4 \tempoAverte
+      \set Score.currentBarNumber = #165
+    \mvTr c2.\fE-\solo
+    f
+    b,
+    es
+    as,
+    g %170
+    c4 f g
+    c,2.
+    f\pE
+    b,
+    as %175
+    g
+    f
+    c'
+    f,
+    b %180
+    es
+    f
+    es
+    d
+    c %185
+    f
+    es
+    d
+    c
+    b %190
+    as4 b2
+    es2.\fE
+    as
+    d,
+    g %195
+    c,
+    f\pE
+    g
+    c,
+    h2 r4 %200
+    c2 r4
+    d2 r4
+    es2 r4
+    f2 r4
+    c g' g, %205
+    c2.\fE
+    f
+    b,
+    es
+    as %210
+    g
+    c,4 g' g,
+    es'8 d16 c g'4 g,
+    c2.\fermata \bar "||" %214 finis
+  }
+}
+
+AverteBassFigures = \figuremode {
+  r2. %165
+  <_->
+  <7->
+  <7>
+  <7>4 <6>2
+  <7 _!>2. %170
+  r4 <6 5 [_-]> <4>8 <_!>
+  r2.
+  <[_-]>
+  <7->2 <6>4
+  <7>4 <6>2 %175
+  <6!>2.
+  <_->
+  <4>4 <_!>2
+  <_->2.
+  r %180
+  <10 9>4 <\t 8>2
+  \bo <7 [_-]>4 \bc <6 [\t]>2
+  <7>4 <6>2
+  <7>4 <6!>2
+  <4>4 <3>2 %185
+  <7 _->4 <6 \t>2
+  <7>4 <6>2
+  <7 [5-]>4 <6>2
+  <7>4 <6->2
+  <7->4 <6>2 %190
+  <7>2.
+  r
+  <7>
+  <7>
+  <7 _!> %195
+  <_->
+  <9 _->4 \bassFigureExtendersOn <8 _-> <6 _-> \bassFigureExtendersOff
+  <_!>2.
+  r
+  <[6]> %200
+  <9>4 <8>2
+  <7>4 <6!>2
+  <7>4 <6>2
+  \bo <9 [_-]>4 \bc <8 [\t]>2
+  r4 <[_!]>2 %205
+  r2.
+  <_->
+  <7->
+  <7>
+  <7>4 <6>2 %210
+  <7 _!>2.
+  r4 <4> <\t>8 <_!>
+  <[6]>4 <_!>2
+  r2. %214 finis
+}
 
 
-
-%     \key c \dorian \time 3/4 \tempoAverte \newSpacingSection
-%       \mvTr c'2.\pE-\solo \noBreak
-%     f
-%     b,
-%     es
-%     as,
-%     g
-%     c4 f g
-%     c,2.
-%     f
-%     b,
-%     as
-%     g
-%     f
-%     c'
-%     f,
-%     b
-%     es
-%     f
-%     es
-%     d
-%     c
-%     f
-%     es
-%     d
-%     c
-%     b
-%     as4 b2
-%     es2.
-%     as
-%     d,
-%     g
-%     c,
-%     f
-%     g
-%     c,
-%     h2 r4
-%     c2 r4
-%     d2 r4
-%     es2 r4
-%     f2 r4
-%     c g' g,
-%     c2.
-%     f
-%     b,
-%     es
-%     as
-%     g
-%     c,4 g' g,
-%     es'8 d16 c g'4 g, \noBreak
-%     c2.\fermata \bar "||"
+%
 %     \key g \dorian \time 4/4 \tempoCorMundum \newSpacingSection
 %       r4 \mvTr es\fE-\tutti es2 \noBreak
 %     es h
