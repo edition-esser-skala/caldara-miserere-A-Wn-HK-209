@@ -286,83 +286,131 @@
   %     \midi { \tempo 4 = 90 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Cor mundum · Ne proicias"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "cnto"
+  %           \CorMundumCornetto
+  %         }
+  %         \new Staff {
+  %           \set Staff.instrumentName = "fag"
+  %           \CorMundumFagotto
+  %         }
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "trb"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \CorMundumTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \CorMundumTromboneII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \CorMundumViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \CorMundumViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \CorMundumSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \CorMundumSopranoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \CorMundumAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \CorMundumAltoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \CorMundumTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \CorMundumTenoreLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \CorMundumBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \CorMundumBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \CorMundumOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \CorMundumBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 } % 300
+  %   }
+  % }
   \bookpart {
-    \subsection "Cor mundum · Ne proicias"
+    \subsection "Domine, labia mea"
     \addTocEntry
+    \paper {
+      system-system-spacing.basic-distance = #30
+      system-system-spacing.minimum-distance = #30
+      systems-per-page = #2
+    }
     \score {
       <<
-        \new StaffGroup <<
-          \new Staff {
-            \set Staff.instrumentName = "cnto"
-            \CorMundumCornetto
-          }
-          \new Staff {
-            \set Staff.instrumentName = "fag"
-            \CorMundumFagotto
-          }
-        >>
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "trb"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \CorMundumTromboneI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \CorMundumTromboneII
-            }
-          >>
-        >>
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "vl"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \CorMundumViolinoI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \CorMundumViolinoII
-            }
-          >>
-        >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \CorMundumSoprano }
+            \new Voice = "Soprano" { \dynamicUp \DomineSoprano }
           }
-          \new Lyrics \lyricsto Soprano \CorMundumSopranoLyrics
+          \new Lyrics \lyricsto Soprano \DomineSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \CorMundumAlto }
+            \new Voice = "Alto" { \dynamicUp \DomineAlto }
           }
-          \new Lyrics \lyricsto Alto \CorMundumAltoLyrics
+          \new Lyrics \lyricsto Alto \DomineAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \CorMundumTenore }
+            \new Voice = "Tenore" { \dynamicUp \DomineTenore }
           }
-          \new Lyrics \lyricsto Tenore \CorMundumTenoreLyrics
+          \new Lyrics \lyricsto Tenore \DomineTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \CorMundumBasso }
+            \new Voice = "Basso" { \dynamicUp \DomineBasso }
           }
-          \new Lyrics \lyricsto Basso \CorMundumBassoLyrics
+          \new Lyrics \lyricsto Basso \DomineBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \CorMundumOrgano
+            \DomineOrgano
           }
         >>
-        \new FiguredBass { \CorMundumBassFigures }
+        \new FiguredBass { \DomineBassFigures }
       >>
-      \layout { }
-      \midi { \tempo 4 = 60 } % 300
+      \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
+      \midi { \tempo 4 = 60 }
     }
   }
 }

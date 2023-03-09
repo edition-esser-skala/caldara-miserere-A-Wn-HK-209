@@ -339,3 +339,44 @@ CorMundumTenoreLyrics = \lyricmode {
   _ %275
   am. %276 finis
 }
+
+DomineTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key es \lydian \time 4/4 \autoBeamOff \tempoDomine
+      \set Score.currentBarNumber = #277
+    R1*16 %292
+    \mvTr c4~\pE^\solo c16[ es d16. c32] d4~ d16[ f es16. d32]
+    es16 d c8 r4 r8 f f c
+    d b b c16([ d)] es es es f es8. d16 %295
+    c16 c c8 r4 r2
+    r4 g'8 f es es16 d c8 b
+    es4~ es16[ f d c] d4~ d16[ es c b]
+    c4~ c16[ c b a!] b[ a b c] a8. g16
+    g4 r r2 %300
+    r r4 c8 b
+    as g16 f f'8 es d4~ d16[ es c d]
+    es16.[ d32 es8]~ es16[ f des es] c16.[ d?32 es16. g,32] f8. es16
+    es4 r b' r
+    r8 b es b c16.([ d32 es16. f32] d8.) es16 %305
+    es4 r r2
+    R1\fermata \bar "||" %307 finis
+  }
+}
+
+DomineTenoreLyrics = \lyricmode {
+  Quo -- _ %293
+  _ ni -- am si vo -- lu --
+  is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem %295
+  u -- ti -- que,
+  ho -- lo -- cau -- stis non de -- le --
+  cta -- _
+  _ _ _ be --
+  ris, %300
+  ho -- lo --
+  cau -- stis non de -- le -- cta --
+  _ _ _ be --
+  ris, non,
+  non de -- le -- cta -- be -- %305
+  ris. %306 finis
+}

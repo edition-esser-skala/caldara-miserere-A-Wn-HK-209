@@ -16,8 +16,7 @@ tempoEcceEnim = \tempoMarkup "[Adagio]"
   tempoEcceEnimC = \tempoMarkup "Adagio"
 tempoAverte = \tempoMarkup "[Larghetto]"
 tempoCorMundum = \tempoMarkup "[Adagio]"
-  tempoNeProicias = \tempo 2 = 150
-  % tempoNeProicias = \tempoMarkup "[Vivace]"
+  tempoNeProicias = \tempoMarkup "[Vivace]"
 tempoDomine = \tempoMarkup "[Andante]"
 tempoSacrificium = \tempoMarkup "[Adagio]"
 

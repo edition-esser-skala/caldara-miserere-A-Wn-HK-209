@@ -422,3 +422,45 @@ CorMundumAltoLyrics = \lyricmode {
   %275
   am. %276 finis
 }
+
+DomineAlto = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 4/4 \autoBeamOff \tempoDomine
+      \set Score.currentBarNumber = #277
+    R1*2 %278
+    r2 \mvTr g'4.\pE^\solo f16.[ as32]
+    g4. f16.[ as32] g8 f16 es es8. d16 %280
+    es4 r r2
+    es8 f16 g as8 as16 as as8 g g c16 c
+    f,8[ g16 as] b4~ b16[ c b c32 b] a16[ a g16. f32]
+    g4~ g16[ g f16. es32] f8 es16([ d)] c8. b16
+    b4 r d4. c16.([ es32)] %285
+    d4. c16 es d4. c16([ es)]
+    d([ c)] d8 b'[ f16. as32] g16.[ f32 g8]~ g16[ g f16 .g32]
+    as16.[ g32 as16. b32] as16.[ es32 f16. g32] f16.[ es32 f16. g32] f16.[ g32 es16. f32]
+    g16[ f] g([ as)] f8.([\trill es32 f)] es4 r
+    r8 g g f g16.[ f32 g16. as32] g16.[ as32 f16. as32] %290
+    g16.[ f32 g16. as32] g16.[ as32 f16. as32] g16 f g as f8.([\trill es32 f)]
+    es4 r r2
+    R1*14 %306
+    R1\fermata \bar "||" %307 finis
+  }
+}
+
+DomineAltoLyrics = \lyricmode {
+  Do -- _ %279
+  _ _ _ mi -- ne, Do -- mi -- %280
+  ne,
+  Do -- mi -- ne la -- bi -- a me -- a, la -- bi -- a
+  me -- _ _
+  _ a a -- pe -- ri --
+  es, et os __ %285
+  me -- um an -- nun -- ti --
+  a -- bit lau -- _
+  _ _ _ _
+  _ dem tu -- am,
+  an -- nun -- ti -- a -- _ %290
+  _ _ _ bit lau -- dem tu --
+  am. %292 finis
+}

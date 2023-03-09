@@ -618,41 +618,80 @@ CorMundumBassFigures = \figuremode {
   <_!>1. %276 finis
 }
 
+DomineOrgano = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 4/4 \tempoDomine
+      \set Score.currentBarNumber = #277
+    \mvTr es8\fE-\solo es16. f32 g8 b es, es16. f32 g8 b \noBreak
+    es, es'16. d32 c8 b as as16. g32 f8 es
+    d es16. f32 g8 b es, es16.\pE f32 g8 b
+    es, es16. f32 g8 b es, f16. g32 f8 b %280
+    es, es16. f32 g8 b es, es16. d32 c8 b
+    as as'16. g32 f8 d es es16. f32 g8 es
+    as g16. f32 b8 b, es d16. c32 f8 g16. a?32
+    b8 b, c d16. es32 d8 es f f,
+    b b16. c32 d8 f b, b16. c32 d8 f %285
+    b, b16. c32 d8 f b, b16. c32 d8 f
+    b, b16. c32 d8 f es es16. f32 g8 b
+    as as16. g32 as8 as, b b'16. as32 b8 b,
+    es as b b, es es16. f32 g8 b
+    es, es16. f32 g8 b es, es16. f32 g8 b %290
+    es, es16. f32 g8 b es, as b b,
+    es\fE c16. d32 es8 g c, c16. d32 es8 g
+    c, c16.\pE d32 es8 as f es16. d32 g8 g,
+    c c16. d32 es8 c f f16. g32 as8 f
+    b, b16. c32 d8 b es g16. f32 g8 es %295
+    as c16. b32 as8 g f f16. es32 d8 c
+    b g'16. f32 es8 d es g16. f32 es8 d
+    c d16. es32 f8 f, b c16. d32 es8 f16. g32
+    a,!8 b16. c32 d8 d, g c d d,
+    g g16. a32 b8 d g, g16. a32 h8 g %300
+    c c16. d32 es8 c f f16. g32 as8 g
+    f f16. g32 as8 f b, b16. c32 d8 f
+    es es16. f32 g8 es as es^\critnote b' b,
+    es es16. g32 g8 b es, es16. f32 g8 b
+    es, es16. f32 g8 es as es b' b, %305
+    es\fE es16. f32 g8 b es, c as b
+    es1\fermata \bar "||" %307 finis
+  }
+}
+
+DomineBassFigures = \figuremode {
+  r1 %277
+  r2. \bo <[_-]>4
+  \bc <[6]>1
+  r2. <7 [_-]>8 <7-> %280
+  r1
+  r4 <[_-]>8 <5-> <4-> <3> <[6]> <6>
+  <6 5>2 q4 <_!>
+  <6 5>2 \bo <[6]>8 \bc q4.
+  r1 %285
+  r
+  r4 <[6]>8 <6 _->4. <[6]>8 <6 _->
+  r \bo <[6]>2..
+  r8 <6>2..
+  r1 %290
+  r2 r8 \bc <[6]>4.
+  r4 <6>8 <_!> r4 <6>8 <_!>
+  r2 <6 5 [_-]>4 <_!>
+  r2 \bo <[_-]>
+  r1 %295
+  r2 <_->
+  r4. <6>2 \bc <[6]>8
+  <7>4 <7 _-> <7-> <7>
+  q <7 [_+]>2 <4>8 <_+>
+  r4. \bo <[_+ _]> <6>8 <_!> %300
+  r2 <_->
+  r4 <6>8 \bc <[7 _-]>2 <6 _->8
+  r1
+  r
+  r %305
+  r
+  r %307 finis
+}
 
 
-%     \time 4/4 \key es \lydian \tempoDomine \newSpacingSection
-%       \mvTr es8\pE-\solo es16. f32 g8 b es, es16. f32 g8 b \noBreak
-%     es, es'16. d32 c8 b as as16. g32 f8 es
-%     d es16. f32 g8 b es, es16. f32 g8 b
-%     es, es16. f32 g8 b es, f16. g32 f8 b
-%     es, es16. f32 g8 b es, es16. d32 c8 b
-%     as as'16. g32 f8 d es es16. f32 g8 es
-%     as g16. f32 b8 b, es d16. c32 f8 g16. a?32
-%     b8 b, c d16. es32 d8 es f f,
-%     b b16. c32 d8 f b, b16. c32 d8 f
-%     b, b16. c32 d8 f b, b16. c32 d8 f
-%     b, b16. c32 d8 f es es16. f32 g8 b
-%     as as16. g32 as8 as, b b'16. as32 b8 b,
-%     es as b b, es es16. f32 g8 b
-%     es, es16. f32 g8 b es, es16. f32 g8 b
-%     es, es16. f32 g8 b es, as b b,
-%     es c16. d32 es8 g c, c16. d32 es8 g
-%     c, c16. d32 es8 as f es16. d32 g8 g,
-%     c c16. d32 es8 c f f16. g32 as8 f
-%     b, b16. c32 d8 b es g16. f32 g8 es
-%     as c16. b32 as8 g
-%     f f16. es32 d8 c
-%     b g'16. f32 es8 d es g16. f32 es8 d
-%     c d16. es32 f8 f, b c16. d32 es8 f16. g32
-%     a,8 b16. c32 d8 d, g c d d,
-%     g g16. a32 b8 d g, g16. a32 h8 g
-%     c c16. d32 es8 c f f16. g32 as8 g
-%     f f16. g32 as8 f b, b16. c32 d8 f
-%     es es16. f32 g8 es as es b' b,
-%     es es16. g32 g8 b es, es16. f32 g8 b
-%     es, es16. f32 g8 es as es b' b,
-%     es es16. f32 g8 b es, c as b \noBreak
-%     es1\fermata \bar "||"
 %     \key f \major \time 4/4 \tempoSacrificum \newSpacingSection
 %       \mvTr b8\fE-\tutti b b b c c c c \noBreak
 %     g' g g g es es f f

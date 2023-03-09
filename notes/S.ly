@@ -343,13 +343,50 @@ CorMundumSopranoLyrics = \lyricmode {
   am. %276 finis
 }
 
+DomineSoprano = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 4/4 \autoBeamOff \tempoDomine
+      \set Score.currentBarNumber = #277
+    R1*2 %278
+    r2 \mvTr es'4.\pE^\solo d16.[ f32]
+    es4. d16.[ f32] es8 d16 es as,8. as16 %280
+    g4 r b8 c16 d es8 es16 es
+    es([ d)] c8 c f16 f b,8[ c16 d] es4~
+    es16[ f es f32 es] d16[ es d es32 d] c16[ c d es] f4~
+    f16[ f es16. d32] es16[ es d16. c32] d8 c16 b a8. b16
+    b4 r b4. a16.[( c32]) %285
+    b4. a16 c b4. a16([ c)]
+    b([ a)] b8 r4 r es8 b16.[ des32]
+    c16.[ b32 c16. des32] c16.[ es32 d?16. c32] d16.[ c32 d16. es32] d16.[ es32 c16. d32]
+    es16[ d] es([ f)] d8.[(\trill c32 d]) es4 r
+    r8 es es d es16.[ d32 es8]~ es16.[ f32 d16. f32] %290
+    es16.[ d32 es8]~ es16.[ f32 d16. f32] es16 d es f d8.[(\trillE c32 d])
+    es4 r r2
+    R1*14 %306
+    R1\fermata \bar "||" %307 finis
+  }
+}
+
+DomineSopranoLyrics = \lyricmode {
+  Do -- _ %279
+  _ _ _ mi -- ne, Do -- mi -- %280
+  ne, Do -- mi -- ne la -- bi -- a
+  me -- a, la -- bi -- a me -- _
+  _ _ _
+  _ _ a a -- pe -- ri --
+  es, et os __ %285
+  me -- um an -- nun -- ti --
+  a -- bit lau -- _
+  _ _ _ _
+  _ dem tu -- am,
+  an -- nun -- ti -- a -- %290
+  _ _ bit lau -- dem tu --
+  am. %292 finis
+}
 
 
 
-% Do -- mi -- ne, la -- bi -- a me -- a a -- pe -- ri -- es,
-% et os me -- um an -- nun -- ti -- a -- bit lau -- dem tu -- am.
-% Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;
-% ho -- lo -- cau -- stis non de -- le -- cta -- be -- ris.
 % Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
 % cor con -- tri -- tum et hu -- mi -- li -- a -- tum, De -- us, non de -- spi -- ci -- es.
 % Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,

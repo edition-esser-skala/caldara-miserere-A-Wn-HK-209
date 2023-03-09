@@ -425,3 +425,44 @@ CorMundumBassoLyrics = \lyricmode {
   %275
   am. %276 finis
 }
+
+DomineBasso = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 4/4 \autoBeamOff \tempoDomine
+      \set Score.currentBarNumber = #277
+    R1*16 %292
+    r4 \mvTr c'2\pE^\solo h4
+    c8 c c g as f f g16([ as)]
+    b b b c b8. as16 g f es8 r4 %295
+    r c'8 b as as16 g f8 es
+    b'1~
+    b16[ c as g] as4~ as16[ b g f] g4~
+    g16[ a fis e?] fis[ a g fis] g8[ c,] d8. d16
+    g,4 r r g'8 f %300
+    es d16 c c'8 b! as2~
+    as4~ as16[ b g as] b16.[ as32 b16. c32] b8[ as]
+    g4~ g16[ as f g] as8[ es] b8. b16
+    es4 r g r
+    r8 es g g as16.[( b32 g16. as32] b8.) b16 %305
+    es,4 r r2
+    R1\fermata \bar "||" %307 finis
+  }
+}
+
+DomineBassoLyrics = \lyricmode {
+  Quo -- ni -- %293
+  am si vo -- lu -- is -- ses sa -- cri --
+  fi -- ci -- um, de -- dis -- sem u -- ti -- que, %295
+  ho -- lo -- cau -- stis non de -- le --
+  cta --
+  _ _
+  _ _ _ be --
+  ris, ho -- lo -- %300
+  cau -- stis non de -- le -- cta --
+  _ _
+  _ _ _ be --
+  ris, non,
+  non de -- le -- cta -- be -- %305
+  ris. %306 finis
+}
