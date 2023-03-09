@@ -120,48 +120,127 @@
   %     \midi { \tempo 4 = 90 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Tibi soli peccavi"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #22
+  %     system-system-spacing.minimum-distance = #22
+  %     systems-per-page = #3
+  %     page-count = #2
+  %   }
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \TibiSoliViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \TibiSoliViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \TibiSoliBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \TibiSoliBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \TibiSoliOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \TibiSoliBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 2 = 150 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Tibi soli peccavi"
+    \subsection "Ecce enim"
     \addTocEntry
-    \paper {
-      system-system-spacing.basic-distance = #22
-      system-system-spacing.minimum-distance = #22
-      systems-per-page = #3
-      page-count = #2
-    }
     \score {
       <<
+        \new StaffGroup <<
+          \new Staff {
+            \set Staff.instrumentName = "cnto"
+            \EcceEnimCornetto
+          }
+          \new Staff {
+            \set Staff.instrumentName = "fag"
+            \EcceEnimFagotto
+          }
+        >>
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "trb"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \EcceEnimTromboneI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \EcceEnimTromboneII
+            }
+          >>
+        >>
         \new StaffGroup <<
           \new GrandStaff <<
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \TibiSoliViolinoI
+              \EcceEnimViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \TibiSoliViolinoII
+              \EcceEnimViolinoII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \TibiSoliBasso }
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \EcceEnimSoprano }
           }
-          \new Lyrics \lyricsto Basso \TibiSoliBassoLyrics
+          \new Lyrics \lyricsto Soprano \EcceEnimSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \EcceEnimAlto }
+          }
+          \new Lyrics \lyricsto Alto \EcceEnimAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \EcceEnimTenore }
+          }
+          \new Lyrics \lyricsto Tenore \EcceEnimTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \EcceEnimBasso }
+          }
+          \new Lyrics \lyricsto Basso \EcceEnimBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \TibiSoliOrgano
+            \EcceEnimOrgano
           }
         >>
-        \new FiguredBass { \TibiSoliBassFigures }
+        \new FiguredBass { \EcceEnimBassFigures }
       >>
       \layout { }
-      \midi { \tempo 2 = 150 }
+      \midi { \tempo 4 = 60 } % 300 – 60
     }
   }
 }

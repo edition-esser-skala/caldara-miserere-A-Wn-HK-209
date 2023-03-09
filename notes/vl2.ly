@@ -90,3 +90,54 @@ TibiSoliViolinoII = {
     b, r r\fermata \bar "||" %104 finis
   }
 }
+
+EcceEnimViolinoII = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \tempoEcceEnim
+      \set Score.currentBarNumber = #105
+    r4 f'2\fE f4
+    f2 f
+    d4 d d4. d8
+    es4. es8 es2
+    c h
+    r r8 g' f g %110
+    f4 f r8 d d d
+    b4 d8 c16 b c2\trill
+    \time 3/2 \tempoEcceEnimB \newSpacingSection b2 r r \noBreak
+    r g' a
+    g g r %115
+    r g a
+    g g d~
+    d c4 b c2
+    d1 d2
+    b g a4 b %120
+    c2 c c
+    a g f
+    b b d~
+    d c b
+    c1.~ %125
+    c2 b a~
+    a g4 fis g2~
+    g g fis
+    g r r
+    R1.*18 %147
+    r2 r b\fE
+    a2. a4 a2
+    b d d %150
+    c4 b c d b c
+    d2 d r
+    R1.
+    r2 r d
+    c b1 %155
+    a2 c a
+    b b r
+    b b b
+    c c c \noBreak
+    h h r\fermata %160
+    \time 4/4 \tempoEcceEnimC \newSpacingSection b2 as \noBreak
+    r r4 b~
+    b as g4. c8
+    a1\fermata \bar "||" %164 finis
+  }
+}

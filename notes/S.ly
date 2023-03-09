@@ -111,17 +111,106 @@ AmpliusSopranoLyrics = \lyricmode {
   me. %47 finis
 }
 
+EcceEnimSoprano = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \autoBeamOff \tempoEcceEnim
+      \set Score.currentBarNumber = #105
+    r4 \mvTr c'2\fE^\tutti c4
+    c2 d
+    d4 d d4. d8
+    c4. c8 c4 c
+    c4. c8 h2
+    r8 g a h c4 c %110
+    r8 f f a, b4 b~ \noBreak
+    b b2 a4
+    \time 3/2 \tempoEcceEnimB \newSpacingSection b2 b a \noBreak
+    b b r
+    r b a %115
+    b b r
+    r d d
+    d( c4 b c2)
+    d1 d2
+    b g a4 b %120
+    c2 c c4 c
+    a2 g f
+    b b d~
+    d c b
+    c1.~ %125
+    c2 b a~
+    a g4 fis g2~
+    g g( fis)
+    g r r
+    R1.*18 %147
+    r2 r \mvTr b\fE^\tuttiE
+    a2. a4 a2
+    b b r %150
+    R1.
+    r2 b b
+    a4 g a b a b8[ c]
+    b4 b b2 b
+    c b2. b4 %155
+    a2 r r
+    b b b
+    b b r
+    c c c \noBreak
+    h h r\fermata %160
+    \time 4/4 \tempoEcceEnimC \newSpacingSection b2 as \noBreak
+    r8 as\p g f b2~
+    b4 as g2
+    a1\fermata \bar "||" %164 finis
+  }
+}
+
+EcceEnimSopranoLyrics = \lyricmode {
+  Ec -- ce %105
+  e -- nim
+  in in -- i -- qui --
+  ta -- ti -- bus con --
+  cep -- tus sum,
+  et in pec -- ca -- tis %110
+  con -- ce -- pit me ma --
+  ter me --
+  a. Ec -- ce
+  e -- nim
+  ve -- ri -- %115
+  ta -- tem
+  di -- le --
+  xi --
+  sti, in --
+  cer -- ta et oc -- %120
+  cul -- ta sa -- pi --
+  en -- ti -- ae
+  tu -- ae ma --
+  ni -- fe --
+  sta -- %125
+  _ _
+  _ _ sti __
+  mi --
+  hi.
+
+  Au -- %148
+  di -- tu -- i
+  me -- o %150
+
+  da -- bis
+  gau -- _ _ _ _ _
+  _ di -- um et
+  lae -- ti -- ti -- %155
+  am,
+  et ex -- ul --
+  ta -- bunt,
+  et ex -- ul --
+  ta -- bunt %160
+  os -- sa
+  hu -- mi -- li -- a --
+  _ _
+  ta. %164 finis
+}
 
 
 
-% Ec -- ce e -- nim in in -- i -- qui -- ta -- ti -- bus con -- cep -- tus sum,
-% et in pec -- ca -- tis con -- ce -- pit me ma -- ter me -- a.
-% Ec -- ce e -- nim ve -- ri -- ta -- tem di -- le -- xi -- sti;
-% in -- cer -- ta et oc -- cul -- ta sa -- pi -- en -- ti -- ae tu -- ae ma -- ni -- fe -- sta -- sti mi -- hi.
-% A -- sper -- ges me hys -- so -- po, et mun -- da -- bor;
-% la -- va -- bis me, et su -- per ni -- vem de -- al -- ba -- bor.
-% Au -- di -- tu -- i me -- o da -- bis gau -- di -- um et lae -- ti -- ti -- am,
-% et ex -- sul -- ta -- bunt os -- sa hu -- mi -- li -- a -- ta.
+
 % A -- ver -- te fa -- ci -- em tu -- am a pec -- ca -- tis me -- is,
 % et o -- mnes in -- i -- qui -- ta -- tes me -- as de -- le.
 % Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.

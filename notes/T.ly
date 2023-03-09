@@ -73,3 +73,134 @@ MiserereTenoreLyrics = \lyricmode {
   me --
   am. %35 finis
 }
+
+EcceEnimTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key f \major \time 4/4 \autoBeamOff \tempoEcceEnim
+      \set Score.currentBarNumber = #105
+    r4 \mvTr f2\fE^\tutti f4
+    f2 f
+    f4 f f4. f8
+    es4. es8 es4 es
+    es d8([ c)] d2
+    r r8 es d c %110
+    c4 c r8 d d b \noBreak
+    b4 b8 c16([ d)] c2
+    \time 3/2 \tempoEcceEnimB \newSpacingSection d2 d d \noBreak
+    d d r
+    r d d %115
+    d d r
+    r b d
+    g,( es'1)
+    a, r2
+    r r d %120
+    es es es4 es
+    c2 c c4 c
+    d2 d d
+    b es r
+    r r es~ %125
+    es d c
+    b1 b2
+    a1.
+    b2 r \mvTr b\pE^\solo
+    c4( b a2) d %130
+    b4( a g2) d'~
+    d cis2.(\trill h?8[ cis)]
+    d1 r2
+    r d4( c) b( a)
+    b1.~ %135
+    b2 c4 b a g
+    a2 a2.(\trill g8[ a)]
+    b4 c a1
+    b f'2~
+    f es d %140
+    cis1 e2~
+    e d cis
+    d1.~
+    d2 e( d)
+    cis1 h4( a) %145
+    d1.~
+    d2 cis1\trill
+    d \mvTr d2\fE^\tutti
+    c2. c4 c2
+    d d r %150
+    R1.
+    r2 d d
+    c4 b c b c es
+    d d d2 d
+    c d c4( b) %155
+    c2 r r
+    d d d
+    es es r
+    es es es \noBreak
+    d d r\fermata %160
+    \time 4/4 \tempoEcceEnimC \newSpacingSection c2 c \noBreak
+    r r8 b\p c des
+    g,4_( as8.[ b16] c2)
+    c1\fermata \bar "||" %164 finis
+  }
+}
+
+EcceEnimTenoreLyrics = \lyricmode {
+  Ec -- ce %105
+  e -- nim
+  in in -- i -- qui --
+  ta -- ti -- bus con --
+  cep -- tus sum,
+  et in pec -- %110
+  ca -- tis con -- ce -- pit
+  me ma -- ter me --
+  a. Ec -- ce
+  e -- nim
+  ve -- ri -- %115
+  ta -- tem
+  di -- le --
+  xi --
+  sti,
+  in -- %120
+  cer -- ta et oc --
+  cul -- ta sa -- pi --
+  en -- ti -- ae
+  tu -- ae
+  ma -- %125
+  ni -- fe --
+  sta -- sti
+  mi --
+  hi. A --
+  sper -- ges %130
+  me __ hys --
+  so --
+  po,
+  et __ mun --
+  da -- %135
+  _ _ _ _
+  _ _
+  _ _ _
+  bor. La --
+  va -- bis %140
+  me, et __
+  su -- per
+  ni --
+  vem __
+  de -- al -- %145
+  ba --
+  _
+  bor. Au --
+  di -- tu -- i
+  me -- o %150
+
+  da -- bis
+  gau -- _ _ _ _ _
+  _ di -- um et
+  lae -- ti -- ti -- %155
+  am,
+  et ex -- ul --
+  ta -- bunt,
+  et ex -- ul --
+  ta -- bunt %160
+  os -- sa
+  hu -- mi -- li --
+  a --
+  ta. %164 finis
+}

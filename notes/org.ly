@@ -240,67 +240,140 @@ TibiSoliBassFigures = \figuremode {
   r %104 finis
 }
 
+EcceEnimOrgano = {
+  \relative c {
+    \clef bass
+    \key f \major \time 4/4 \tempoEcceEnim
+      \set Score.currentBarNumber = #105
+    r4 \mvTr f2\fE-\tutti f4
+    es2 d
+    d4 d h2
+    c c
+    as g
+    r r8 c d es %110
+    f2 r8 b b d, \noBreak
+    es4 b f' f,
+    \time 3/2 \tempoEcceEnimB \newSpacingSection b2 g' fis \noBreak
+    g g, fis
+    g g' fis %115
+    g g, fis
+    g g' f!
+    es1.
+    d1 r2
+    g1. %120
+    es2 c d4 es
+    f2 f f
+    d c b
+    es1.
+    c %125
+    d
+    g,
+    d'
+    g,2 \mvTr g'1~\pE-\solo
+    g fis2 %130
+    g1 f2
+    g4 f e!2 a
+    fis d g
+    c, d1
+    g,1. %135
+    c
+    f,
+    b4 es f2 f,
+    b1.
+    g %140
+    a
+    d1 a2
+    b1.
+    e
+    a, %145
+    b
+    g2 a1
+    d \mvTr b2\fE-\tutti
+    f' f, f'
+    b, b b' %150
+    f f, f'
+    b, b' b,
+    f' f, f'
+    b, b b'
+    a g1 %155
+    f2 a f
+    b, d b
+    es g es
+    c es c
+    g' g, r\fermata %160
+    \time 4/4 \tempoEcceEnimC \newSpacingSection e'!2 f \noBreak
+    r r8 des\p c b
+    c1
+    f,\fermata \bar "||" %164 finis
+  }
+}
 
-%     \time 4/4 \key g \dorian \tempoEcceEnim
-%       r4 \mvTr f'2\fE-\tutti f4 \noBreak
-%     es2 d
-%     d4 d h2
-%     c c
-%     as g
-%     r r8 c d es
-%     f2 r8 b b d, \noBreak
-%     es4 b f' f,
-%     \time 3/2 \tempoEcceEnimB \newSpacingSection b2 g' fis \noBreak
-%     g g, fis
-%     g g' fis
-%     g g, fis
-%     g g' f!
-%     es1.
-%     d
-%     g
-%     es2 c d4 es
-%     f2 f f
-%     d c b
-%     es1.
-%     c
-%     d
-%     g,
-%     d'
-%     g,2 \mvTr g'1~\pE-\solo
-%     g fis2
-%     g4 f e!2 a
-%     fis d g
-%     c, d1
-%     g,1.
-%     c
-%     f,
-%     b4 es f2 f,
-%     b1.
-%     g
-%     a
-%     d1 a2
-%     b1.
-%     e
-%     a,
-%     b
-%     g2 a1
-%     d \mvTr b2\fE-\tutti
-%     f' f, f'
-%     b, b b'
-%     f f, f'
-%     b, b' b,
-%     f' f, f'
-%     b, b b'
-%     a g1
-%     f2 a f
-%     b, d b
-%     es g es
-%     c es c
-%     g' g, r\fermata
-%     \time 4/4 \tempoEcceEnimC \newSpacingSection e!2 f \noBreak
-%     r r8 des c b
-%     c1 \noBreak
-%     f,\fermata \bar "||"
+EcceEnimBassFigures = \figuremode {
+  r1 %105
+  <6 4 2>2 <6>
+  r <7->
+  <_->1
+  <7 [5-]>4 <6> <_!>2
+  r2 r8 <[_-]>4. %110
+  r1
+  r2 <4>4 <3>
+  r1 \bo <[6]>2
+  r1 <6>2
+  r1 <6>2 %115
+  r1 <6>2
+  r1 \bc <[6]>2
+  <7> <6>1
+  <_+>1.
+  r %120
+  \bo <[6]>2 \bc <[_-]>1
+  r1.
+  <6>
+  <7>2 <6> <[5]>
+  \bo <5 [_-]> \bassFigureExtendersOn <6 _-> \bc <5 [_-]> %125
+  <9- _+> <8 _+> <7 _+> \bassFigureExtendersOff
+  <10 9> <\t 8>1
+  <4>1 <_+>2
+  r1.
+  <2>1 <[6]>2 %130
+  r1 <6>2
+  r4 <[6]> <6\\>2 \bo <[_+]>
+  <6> \bc <[_+]>1
+  <6 5 [_-]>2 <_+>1
+  r1. %135
+  <7 _->
+  <7->
+  r4 <[6]> r1
+  r1.
+  <7>2 <6-> <5> %140
+  \bo <9 [5!] _+> \bassFigureExtendersOn <8 5! _+> \bc <7 [5!] _+> \bassFigureExtendersOff
+  <9> <8> <_+>
+  <7> <6> <5>
+  <7>1.
+  <7 _+> %145
+  <5>
+  <6 5>2 <[_+]>1
+  r1.
+  r
+  r %150
+  r
+  r
+  r
+  r
+  <6>2 <7>2. <6!>4 %155
+  r1.
+  r
+  r
+  <[_-]>
+  <_!> %160
+  <6 5->2 <_->
+  r2 r8 <6>4 <6 [_-]>8
+  <7 _!>4 <6- 4> <5 \t> <\t 3>
+  <_!>1 %164 finis
+}
+
+
+
+
 %     \key c \dorian \time 3/4 \tempoAverte \newSpacingSection
 %       \mvTr c'2.\pE-\solo \noBreak
 %     f
