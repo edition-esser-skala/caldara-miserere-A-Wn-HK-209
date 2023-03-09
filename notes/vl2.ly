@@ -191,3 +191,72 @@ AverteViolinoII = {
     c2 r4\fermata \bar "||" %214 finis
   }
 }
+
+CorMundumViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoCorMundum
+      \set Score.currentBarNumber = #215
+    r4 es'\fE es2
+    es d8 d d d
+    c2 c
+    r4 c c8 c16 c c8 c
+    f4. f8 f2
+    r4 f8 f g4. f16 es %220
+    d8 c16 h c2 h4 \noBreak
+    c1\fermata \bar "||"
+    \time 3/2 \tempoNeProicias \newSpacingSection r2 f g \noBreak
+    f f e!
+    f1 c2 %225
+    c2. c4 h2
+    c c e
+    f2. f4 f f
+    g1 f2~
+    f f2. e4 %230
+    f2 c c
+    cis cis cis
+    d2. d4 d2
+    r f e
+    f1 e2 %235
+    d1 c2
+    r r a
+    b b a
+    b a f'
+    e!1. %240
+    d1 b2
+    c1 c2~
+    c b4 a b2~
+    b a a
+    g g4 fis g2 %245
+    fis1 d'2
+    b4 a g2 b
+    c1.~
+    c2 a f
+    b1.~ %250
+    b2 g c
+    a1.
+    b2 f b~
+    b a1
+    b2 f'4 es d2 %255
+    c c2.\trill b8( c)
+    d4( c) b2 r
+    R1.
+    d2. e4 f2~
+    f e!2. e4 %260
+    f2 f, r
+    R1.*2
+    r2 c' es
+    b2. b4 b2 %265
+    d d b
+    a b1
+    b2 a a
+    g a1
+    g2 a1 %270
+    g2 a1
+    g2 f' f
+    es2. es4 d2
+    d2. c4 b a8( g)
+    a1.\trill %275
+    g\fermata \bar "||" %276 finis
+  }
+}

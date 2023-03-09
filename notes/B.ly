@@ -290,3 +290,138 @@ EcceEnimBassoLyrics = \lyricmode {
   a --
   ta. %164 finis
 }
+
+CorMundumBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoCorMundum
+      \set Score.currentBarNumber = #215
+    r4 \mvTr es\fE^\tutti es2
+    es h8 h h h
+    c2 c
+    r4 c b!8 b16 b b8 b
+    as4. as8 as2
+    r4 f'8 f f4 es8 d16([ c)] %220
+    g'1 \noBreak
+    c,\fermata \bar "||"
+    \time 3/2 \tempoNeProicias \newSpacingSection r2 f e! \noBreak
+    f b, c
+    f1 e2 %225
+    d2. d4 g2
+    c, c c
+    d d4 d d d
+    e2 e f
+    b,2. b4 c c %230
+    f2 f f
+    e e e
+    d2. d4 d2
+    r d cis
+    d1 c2 %235
+    b1 a2
+    r r f'
+    g g4 g f f
+    g2 f d
+    a'4( g a2) a, %240
+    d1 b'2
+    b a a
+    b b, b
+    f' f fis
+    g es1 %245
+    d r2
+    r r g
+    es4 d c2 es
+    f1.~
+    f2 es d %250
+    es1.~
+    es2 d c
+    d c b
+    es f1
+    b, r2 %255
+    R1.
+    b2. c4 d2
+    es c f
+    b,1 r2
+    R1. %260
+    f'2. g4 a2
+    b g c,
+    f a f
+    c2. c4 c2
+    g' g r %265
+    d d d
+    c b1
+    f'2 f fis
+    g fis1
+    g2 fis1 %270
+    g2 f1
+    es2 d d
+    c2. c4 b2
+    d1.~
+    d %275
+    g,\fermata \bar "||" %276 finis
+  }
+}
+
+CorMundumBassoLyrics = \lyricmode {
+  Cor mun -- %215
+  dum cre -- a in me,
+  De -- us,
+  et spi -- ri -- tum re -- ctum
+  in -- no -- va
+  in vi -- sce -- ri -- bus %220
+  me --
+  is.
+  Ne pro --
+  i -- ci -- as
+  me a %225
+  fa -- ci -- e
+  tu -- a, et
+  Spi -- ri -- tum San -- ctum
+  tu -- um ne
+  au -- fe -- ras a %230
+  me. Red -- de
+  mi -- hi lae --
+  ti -- ti -- am
+  sa -- lu --
+  ta -- ris %235
+  tu -- i,
+  et
+  spi -- ri -- tu prin -- ci --
+  pa -- li con --
+  fir -- ma %240
+  me. Do --
+  ce -- bo in --
+  i -- quos, in --
+  i -- quos vi --
+  as tu -- %245
+  as,
+  et
+  im -- pi -- i ad
+  te __
+  con -- ver -- %250
+  ten --
+  _ _
+  _ _ _
+  _ _
+  tur. %255
+
+  Li -- be -- ra,
+  li -- be -- ra
+  me,
+  %260
+  li -- be -- ra,
+  li -- be -- ra
+  me de san --
+  gui -- ni -- bus,
+  De -- us, %265
+  De -- us sa --
+  lu -- tis
+  me -- ae, et
+  ex -- ul --
+  ta -- bit %270
+  lin -- gua
+  me -- a iu --
+  sti -- ti -- am
+  tu --
+  %275
+  am. %276 finis
+}

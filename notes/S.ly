@@ -208,17 +208,144 @@ EcceEnimSopranoLyrics = \lyricmode {
   ta. %164 finis
 }
 
+CorMundumSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoCorMundum
+      \set Score.currentBarNumber = #215
+    r4 \mvTr b'\fE^\tutti b2
+    b d8 d d d
+    c2 c
+    r4 c c8 c16 c c8 c
+    c4. c8 c2
+    r4 des8 des h4 c8 c %220
+    h([ a16 g] c2 h4) \noBreak
+    c1\fermata \bar "||"
+    \time 3/2 \tempoNeProicias \newSpacingSection r2 a! c \noBreak
+    a g g
+    a1 c2 %225
+    c2. c4 h2
+    c c c
+    c b!4 b b b
+    b2 b a
+    g2. g4 g g %230
+    a2 a a
+    cis cis cis
+    d2. d4 d2
+    r b a
+    b1 a2 %235
+    g1 f2
+    r r d'
+    es es4 es d d
+    es2 d d~
+    d cis2. cis4 %240
+    d1 d2
+    c! c c~
+    c b4 a b2~
+    b a d
+    d d2.( c4) %245
+    d1 d2
+    b4 a g2 b
+    c1.~
+    c2 a f
+    b1.~ %250
+    b2 g c
+    a1.
+    b2 f b~
+    b a1
+    b r2 %255
+    R1.
+    d2. c4 b2
+    b2. b4 a2
+    b1 r2
+    R1. %260
+    c2. b4 a2
+    g g g
+    a a a
+    g2. g4 g2
+    g g r %265
+    b b b
+    a b1
+    b2 a d
+    es d1
+    es2 d1 %270
+    es2 d1
+    c2 b b
+    as2. as4 g2
+    fis1 g2~
+    g g2. fis4 %275
+    g1.\fermata \bar "||" %276 finis
+  }
+}
+
+CorMundumSopranoLyrics = \lyricmode {
+  Cor mun -- %215
+  dum cre -- a in me,
+  De -- us,
+  et spi -- ri -- tum re -- ctum
+  in -- no -- va
+  in vi -- sce -- ri -- bus %220
+  me --
+  is.
+  Ne pro --
+  i -- ci -- as
+  me a %225
+  fa -- ci -- e
+  tu -- a, et
+  Spi -- ri -- tum San -- ctum
+  tu -- um ne
+  au -- fe -- ras a %230
+  me. Red -- de
+  mi -- hi lae --
+  ti -- ti -- am
+  sa -- lu --
+  ta -- ris %235
+  tu -- i,
+  et
+  spi -- ri -- tu prin -- ci --
+  pa -- li con --
+  fir -- ma %240
+  me. Do --
+  ce -- bo in --
+  i -- _ _
+  quos vi --
+  as tu -- %245
+  as, et
+  im -- pi -- i ad
+  te __
+  con -- ver --
+  ten -- %250
+  _ _
+  _
+  _ _ _
+  _
+  tur. %255
+
+  Li -- be -- ra,
+  li -- be -- ra
+  me,
+  %260
+  li -- be -- ra,
+  li -- be -- ra
+  me de san --
+  gui -- ni -- bus,
+  De -- us, %265
+  De -- us sa --
+  lu -- tis
+  me -- ae, et
+  ex -- ul --
+  ta -- bit %270
+  lin -- gua
+  me -- a iu --
+  sti -- ti -- am
+  tu -- _
+  _ _ %275
+  am. %276 finis
+}
 
 
 
 
-% Cor mun -- dum cre -- a in me, De -- us, et spi -- ri -- tum re -- ctum in -- no -- va in vi -- sce -- ri -- bus me -- is.
-% Ne pro -- i -- ci -- as me a fa -- ci -- e tu -- a, et spi -- ri -- tum san -- ctum tu -- um ne au -- fe -- ras a me.
-% Red -- de mi -- hi lae -- ti -- ti -- am sa -- lu -- ta -- ris tu -- i,
-% et spi -- ri -- tu prin -- ci -- pa -- li con -- fir -- ma me.
-% Do -- ce -- bo in -- i -- quos vi -- as tu -- as, et im -- pi -- i ad te con -- ver -- ten -- tur.
-% Li -- be -- ra me de san -- gui -- ni -- bus, De -- us, De -- us sa -- lu -- tis me -- ae,
-% et ex -- sul -- ta -- bit lin -- gu -- a me -- a iu -- sti -- ti -- am tu -- am.
 % Do -- mi -- ne, la -- bi -- a me -- a a -- pe -- ri -- es,
 % et os me -- um an -- nun -- ti -- a -- bit lau -- dem tu -- am.
 % Quo -- ni -- am si vo -- lu -- is -- ses sa -- cri -- fi -- ci -- um, de -- dis -- sem u -- ti -- que;

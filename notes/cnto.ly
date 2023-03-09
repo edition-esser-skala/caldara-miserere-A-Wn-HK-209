@@ -90,3 +90,73 @@ EcceEnimCornetto = {
     a1\fermata \bar "||" %164 finis
   }
 }
+
+CorMundumCornetto = {
+  \relative c' {
+    \clef soprano
+    \key g \dorian \time 4/4 \tempoCorMundum
+      \set Score.currentBarNumber = #215
+    r4 b'\fE b2
+    b d8 d d d
+    c2 c
+    r4 c c8 c16 c c8 c
+    c4. c8 c2
+    r4 des8 des h4 c8 c %220
+    h a16 g c2 h4 \noBreak
+    c1\fermata \bar "||"
+    \time 3/2 \tempoNeProicias \newSpacingSection r2 a! c \noBreak
+    a g g
+    a1 c2 %225
+    c2. c4 h2
+    c c c
+    c b!4 b b b
+    b2 b a
+    g2. g4 g g %230
+    a2 a a
+    cis cis cis
+    d2. d4 d2
+    r b a
+    b1 a2 %235
+    g1 f2
+    r r d'
+    es es4 es d d
+    es2 d d~
+    d cis2. cis4 %240
+    d1 d2
+    c! c \once \tieDashed c~
+    c b4 a b2~
+    b a d
+    d d2. c4 %245
+    d1 d2
+    b4 a g2 b
+    c1.~
+    c2 a f
+    b1.~ %250
+    b2 g c
+    a1.
+    b2 f \once \slurDashed b~
+    b a1
+    b r2 %255
+    R1.
+    d2. c4 b2
+    b2. b4 a2
+    b1 r2
+    R1. %260
+    c2. b4 a2
+    g g g
+    a a a
+    g2. g4 g2
+    g g r %265
+    b b b
+    a b1
+    b2 a d
+    es d1
+    es2 d1 %270
+    es2 d1
+    c2 b b
+    as2. as4 g2
+    fis1 g2~
+    g g2. fis4 %275
+    g1.\fermata \bar "||" %276 finis
+  }
+}

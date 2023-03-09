@@ -91,3 +91,72 @@ EcceEnimTromboneI = {
     f1\fermata \bar "|." %164 finis
   }
 }
+
+CorMundumTromboneI = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoCorMundum
+      \set Score.currentBarNumber = #215
+    r4 b'\fE b2
+    b g8 g g g
+    g2 g
+    r4 g g8 g16 g g8 g
+    f4. f8 f2
+    r4 as8 as g2 %220
+    g1 \noBreak
+    g\fermata \bar "||"
+    \time 3/2 \tempoNeProicias \newSpacingSection r2 f c' \noBreak
+    f, g g
+    a1 g2 %225
+    a a g
+    g g g
+    f b! b
+    g1 f2
+    d' d c %230
+    c a a
+    e e e
+    f2. f4 f2
+    r f a
+    f1 a2 %235
+    d,1 f2
+    r r f
+    es es d^\critnote
+    es f a
+    a1 a2 %240
+    a1 b2
+    g f1
+    f2 f f
+    f f d
+    d d g, %245
+    d'1 r2
+    r r g
+    g g g
+    a1.
+    g %250
+    g1 es2
+    f1.
+    f
+    es2 c f
+    f1 f2 %255
+    g f2. f4
+    f1 r2
+    R1.
+    f2 f f
+    g g1 %260
+    f r2
+    R1.*2
+    r2 g g
+    g2. g4 g2 %265
+    f f f
+    a f1
+    f2 f d
+    b d1
+    b2 d1 %270
+    g2 d1
+    es2 f1
+    c' g2
+    \once \tieDashed d1.~
+    d %275
+    d\fermata \bar "||" %276 finis
+  }
+}

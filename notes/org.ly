@@ -482,72 +482,144 @@ AverteBassFigures = \figuremode {
   r2. %214 finis
 }
 
+CorMundumOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \tempoCorMundum
+      \set Score.currentBarNumber = #215
+    r4 \mvTr es\fE-\tutti es2
+    es h
+    c1
+    r4 c b!2
+    as1
+    r4 f'2 es8 d16 c %220
+    g1 \noBreak
+    c\fermata \bar "||"
+    \time 3/2 \tempoNeProicias \newSpacingSection
+      r2 f e! \noBreak
+    f b, c
+    f1 e2 %225
+    d1 g2
+    c, c c
+    d1.
+    e1 f2
+    b,1 c2 %230
+    f, f' f
+    e e e
+    d1 d2
+    r d cis
+    d1 c2 %235
+    b1 a2
+    r r f'
+    g1 f2
+    g f d
+    a'4 g a2 a, %240
+    d1 b'2~
+    b a1
+    b2 b, b
+    f' f, fis'
+    g es1 %245
+    d1 r2
+    g1.
+    es4 d c2 es
+    f1.~
+    f2 es d %250
+    es1.~
+    es2 d c
+    d c b
+    es f f,
+    b2. c4 d2 %255
+    es f f,
+    b2. c4 d2
+    es c f
+    b,1 f2
+    b c c, %260
+    f'2. g4 a2
+    b, g c
+    f, a f
+    c' c, c'
+    g' g, g' %265
+    d d d
+    c b1
+    f'2 f, fis'
+    g fis1
+    g2 fis1 %270
+    g2 f1
+    es2 d1
+    c b2
+    d1.~
+    d %275
+    g,\fermata \bar "||" %276 finis
+  }
+}
 
-%
-%     \key g \dorian \time 4/4 \tempoCorMundum \newSpacingSection
-%       r4 \mvTr es\fE-\tutti es2 \noBreak
-%     es h
-%     c1
-%     r4 c b!2
-%     as1
-%     r4 f'2 es8 d16 c
-%     g1 \noBreak
-%     c\fermata \bar "||"
-%     \time 3/2 \tempoNeProicias \newSpacingSection
-%       r2 \mvTr f'\fE-\tutti e \noBreak
-%     f b, c
-%     f1 e2
-%     d1 g2
-%     c, c c
-%     d1.
-%     e1 f2
-%     b, c2
-%     f, f' f
-%     e e e
-%     d1 d2
-%     r d cis
-%     d1 c2
-%     b1 a2
-%     r r f'
-%     g1 f2
-%     g f d
-%     a'4 g a2 a,
-%     d1 b'2~
-%     b a1
-%     b2 b, b
-%     f' f, fis'
-%     g es1
-%     d1.
-%     g
-%     es4 d c2 es
-%     f1.~
-%     f2 es d
-%     es1.~
-%     es2 d c
-%     d c b
-%     es f f,
-%     b2. c4 b2
-%     es f f,
-%     b2. c4 d2
-%     es c f
-%     b,1 f2
-%     b c c,
-%     f'2. g4 a2
-%     b, g c
-%     f, a f
-%     c' c, c'
-%     g' g, g'
-%     d d d
-%     c b1
-%     f'2 f, fis'
-%     g fis1
-%     g2 fis1
-%     g2 f1
-%     es2 d1
-%     c b2
-%     d1.~
-%     d \noBreak
-%     g,\fermata \bar "||"
+CorMundumBassFigures = \figuremode {
+  r4 <5>2. %215
+  r2 <[6]>
+  <_->1
+  r4 q <6 4! 2>2
+  <6>1
+  r4 <6- _-> <6! 4! 2> <6> %220
+  <5 _!> <6- 4> <5 \t> <\t _!>
+  <_!>1
+  r2 \bo <[_!]> \bc <[6]>
+  r <6 5> <_!>
+  r1 <[6]>2 %225
+  <7>1 <_!>2
+  r1.
+  <7>2 <6->1
+  <6 5>1.
+  q1 \bo <[4]>4 \bc <[3]> %230
+  r1.
+  <6\\>
+  r
+  r2 <6> q
+  q1 q2 %235
+  q1 q2
+  r1 q2
+  <6->1 <6>2
+  <6-> <6>1
+  \bo <[5!] 4>2 \bc <[\t] _+>1 %240
+  r1.
+  <4- 2!>2 <[6]>1
+  <9>2 <8>1
+  <5 4>2 <\t 3> <[6]>
+  r <7>2. <6>4 %245
+  <_+>1.
+  r
+  <6>1 \once \bassFigureExtendersOn q2
+  r1.
+  <6 4 2>1 \once \bassFigureExtendersOn q2 %250
+  <5>1 <6>2
+  <4 2> \bo <[\t \t]> <6 _->
+  <6> \bc <[6 _-]>1
+  <6 5>1.
+  r2. \bo <[6 _-]>4 \bc <[6 _]>2 %255
+  <6 5>1.
+  r2. \bo <[6 _-]>4 \bc <[6 _]>2
+  <6 5>1.
+  r
+  <6 5>2 <_!>1 %260
+  r1.
+  <6 5>
+  r
+  <_->
+  q %265
+  <6>
+  <6 _->
+  <6 4>2 <5 3> <6>
+  <6-> <6>1
+  <6->2 <6>1 %270
+  <6->2 <6>1
+  q2 q1
+  <6 _-> <6>2
+  <[5!] _+>1 <6 4>2
+  <5 \t>1 r4 <\t _+> %275
+  <_!>1. %276 finis
+}
+
+
+
 %     \time 4/4 \key es \lydian \tempoDomine \newSpacingSection
 %       \mvTr es8\pE-\solo es16. f32 g8 b es, es16. f32 g8 b \noBreak
 %     es, es'16. d32 c8 b as as16. g32 f8 es
