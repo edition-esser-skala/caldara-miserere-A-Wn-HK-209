@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "vl 2")
 \include "score_settings/one-staff.ly"
 
 \book {
@@ -12,8 +12,8 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \MiserereViolinoI
+          \set Staff.instrumentName = "Violino II"
+          \MiserereViolinoII
         }
       >>
     }
@@ -24,7 +24,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \TibiSoliViolinoI }
+        \new Staff { \TibiSoliViolinoII }
       >>
     }
   }
@@ -33,7 +33,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \EcceEnimViolinoI }
+        \new Staff { \EcceEnimViolinoII }
       >>
     }
   }
@@ -42,7 +42,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \AverteViolinoI }
+        \new Staff { \AverteViolinoII }
       >>
     }
   }
@@ -51,7 +51,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \CorMundumViolinoI }
+        \new Staff { \CorMundumViolinoII }
       >>
     }
     \tacet "subsection" "Domine, labia mea"
@@ -61,7 +61,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \SacrificiumViolinoI }
+        \new Staff { \SacrificiumViolinoII }
       >>
     }
     \tacet "subsection" "Gloria Patri"
@@ -72,7 +72,7 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \EtInViolinoI }
+        \new Staff { \EtInViolinoII }
       >>
     }
   }

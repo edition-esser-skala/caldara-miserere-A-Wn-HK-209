@@ -6,24 +6,99 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "Miserere · Et secundam"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper { indent = 2\cm systems-per-page = #7 }
     \score {
       <<
         \new Staff {
           \set Staff.instrumentName = "Bassi"
-          \xxxOrgano
+          \MiserereOrgano
         }
       >>
     }
   }
   \bookpart {
-    \section "2" "Second"
+    \subsection "Amplius lava me"
     \addTocEntry
     \score {
       <<
-        \new Staff { \yyyOrgano }
+        \new Staff { \AmpliusOrgano }
+      >>
+    }
+  }
+  \bookpart {
+    \subsection "Tibi soli peccavi"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \TibiSoliOrgano }
+      >>
+    }
+  }
+  \bookpart {
+    \subsection "Ecce enim"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \EcceEnimOrgano }
+      >>
+    }
+  }
+  \bookpart {
+    \subsection "Averte faciem tuam"
+    \addTocEntry
+    \paper { systems-per-page = #6 }
+    \score {
+      <<
+        \new Staff { \AverteOrgano }
+      >>
+    }
+  }
+  \bookpart {
+    \subsection "Cor mundum · Ne proicias"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \CorMundumOrgano }
+      >>
+    }
+  }
+  \bookpart {
+    \subsection "Domine, labia mea"
+    \addTocEntry
+    \paper { page-count = #1 }
+    \score {
+      <<
+        \new Staff { \DomineOrgano }
+      >>
+    }
+  }
+  \bookpart {
+    \subsection "Sacrificium · Benigne · Tunc imponent"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \SacrificiumOrgano }
+      >>
+    }
+  }
+  \bookpart {
+    \subsection "Gloria Patri"
+    \addTocEntry
+    \paper { systems-per-page = #4 }
+    \score {
+      <<
+        \new Staff { \GloriaOrgano }
+      >>
+    }
+  }
+  \bookpart {
+    \subsection "Et in sæcula"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \EtInOrgano }
       >>
     }
   }
