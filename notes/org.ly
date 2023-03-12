@@ -770,7 +770,7 @@ SacrificiumOrgano = {
     d g2 fis4
     g f es2
     d1
-    g,\fermata \bar "||" %370
+    g,\fermata \bar "||" %370 finis
   }
 }
 
@@ -898,4 +898,93 @@ GloriaBassFigures = \figuremode {
   <6> <6- 4> <6 _->
   <6- 4> <6 _-> <_!>
   \bc <[_- _]>1. %395 finis
+}
+
+EtInOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \tempoEtIn
+      \set Score.currentBarNumber = #396
+    << {
+      g'4. a8 b2
+      a8 g a h c4. b?16 a
+      b8 a b c d4 b
+      a2 s
+    } \\ {
+      \mvTr r2\fE-\tuttiE d,4. e!8 \noBreak
+      f!2 e8 d e fis
+      g4. fis16 e fis8 d g4~
+      g fis g2
+    } >>
+    g d8 d16 e f8 g %400
+    a2 g4 g,
+    d'2 a
+    d4. e8 f2
+    e8 d e fis g2
+    d c %405
+    g d'
+    g,8 g' f! g es2
+    as4. g16 as f2~
+    f4 es8 c g'4 g,
+    c2 g'4. a!8 %410
+    b2 a8 g a h
+    c4. b16 a b8 a b a16 g
+    a2 g
+    f!4. g8 a2
+    g8 f g a b4 a %415
+    g2 f4 b
+    f f, b b'
+    a g d2
+    \clef treble << {
+      g'4. a8 b2
+      a8 g a b c4. b16 a %420
+     } \\ {
+      r2 d,4. e!8
+      f!2 e8 d e fis %420
+     } >>
+    \clef "treble_8" g,4. a8 \clef bass d,4. e8
+    f2 e8 d e fis
+    g2 f8 e f g
+    a4 d, a' a,
+    d g2 fis4 %425
+    g f es2
+    d1
+    g,\fermata \bar "|." %428 finis
+  }
+}
+
+EtInBassFigures = \figuremode {
+  r1 %396
+  r
+  r
+  r
+  \bo <5 [3]>4. \bc <6! [4]>8 \bo <[_!]>4. \bc <[7] _!>8 %400
+  <5>4. <6\\>8 <_!>4 <5 _!>8 <6 4\+>
+  <_!>2 <4>4 <_+>
+  r2 <[5] 3>4. <6 4!>8
+  <[6!]>2 \bo <5 [_-]>4. \bc <6 [4]>8
+  <5 _!>4. <6!>8 <[5] 3>4. <6 4\+>8 %405
+  <_->2 <4>4 <_+>
+  <_!>2 <6>
+  <5->4 <6> \bo <5 [_-]> \bc <6 [\t]>
+  <4! 2> \bo <[6]>8 \bc <[_-]> <4>4 <_!>
+  <_->2 <6- [_-]>4. <\t>8 %410
+  <[5 3]>4. <6 4!>8 <6>2
+  <3>4. <5\+>8 <6>2
+  <7>4 <6\\>2.
+  <6>2 <6>
+  <6->2. <6>4 %415
+  <7> <6-> <7->2
+  <4>4 <3>2 <6>4
+  <6\\>2 <_+>
+  r1
+  r %420
+  r2 <6>
+  \bo <[3]>4. \bc <[4!]>8 <6>2
+  <5 [_-]>4. <6>8 q2
+  <_+>2 <4>4 <_+>
+  q <[3]> <[6-] 4! 2> <[6]> %425
+  r <6> <7> <6>
+  <7 _+> <6 4> <5 \t> <\t _+>
+  <_!>1 %428 finis
 }

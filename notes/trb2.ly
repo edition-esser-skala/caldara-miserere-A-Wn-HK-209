@@ -228,3 +228,42 @@ SacrificiumTromboneII = {
     d1\fermata \bar "||" %370 finis
   }
 }
+
+EtInTromboneII = {
+  \relative c' {
+    \clef tenor
+    \key g \dorian \time 4/4 \tempoEtIn
+      \set Score.currentBarNumber = #396
+    g4.\fE a8 b2
+    a8 g a h c4. b?16 a
+    b8 a b c d4 b
+    a2 b
+    b8 b16 a b8 c d4 d %400
+    r2 d8 d16 c d8 e
+    a,2 a
+    a4 r r2
+    g4. a8 b2
+    a8 g a h c4 c %405
+    d d d2
+    d r
+    r8 c b c as4. g16 f
+    g4 g g2
+    g b!8 b16 a b8 c %410
+    d4 r r2
+    R1*2
+    a8 a16 g a8 b c4 c
+    b8 b16 a b8 c b4 c %415
+    d b c d8. es16
+    f2 f4 d
+    c8 c d d d4 d
+    R1*2 %420
+    g,4. a8 b2
+    a8 g a h c2
+    b8 a b c d4 d
+    cis d e2
+    d4 d es d~ %425
+    d f! b, es
+    a, b8. c16 d2
+    d1\fermata \bar "|." %428 finis
+  }
+}

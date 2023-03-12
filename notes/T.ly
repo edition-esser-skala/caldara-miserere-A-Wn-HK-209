@@ -508,3 +508,76 @@ SacrificiumTenoreLyrics = \lyricmode {
   tu -- um __ vi -- tu --
   los. %370 finis
 }
+
+EtInTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoEtIn
+      \set Score.currentBarNumber = #396
+    \mvTr g4.\fE^\tuttiE a8 b2
+    a8 g a h c4._( b?16[ a]
+    b8) a b c d4 b
+    a2 b
+    b8 b16([ a]) b8 c d4 d %400
+    r2 d8 d16([ c]) d8 e
+    a,4 a a2
+    a4 r r2
+    g4. a8 b2
+    a8 g a h c4 c %405
+    d d d2
+    d r
+    r8 c[ b c] as4. g16[ f]
+    g4 g g2
+    g b!8 b16([ a]) b8 c %410
+    d d r4 r2
+    R1*2
+    a8 a16([ g]) a8 b c4 c
+    b8 b16([ a]) b8 c b4 c %415
+    d b c d8.([ es16)]
+    f2 f4 d(
+    c8) c d d d4 d
+    R1*2 %420
+    g,4. a8 b2
+    a8 g a h c2
+    b8 a([ b]) c d4 d
+    cis d e2
+    d4 d es d~ %425
+    d f! b, es
+    a,( b8.[ c16] d2)
+    d1\fermata \bar "|." %428 finis
+  }
+}
+
+EtInTenoreLyrics = \lyricmode {
+  Et in sae -- %396
+  cu -- la sae -- cu -- lo --
+  rum, sae -- cu -- lo -- rum,
+  a -- men,
+  sae -- cu -- lo -- rum, a -- men, %400
+  sae -- cu -- lo -- rum,
+  a -- men, a --
+  men,
+  et in sae --
+  cu -- la sae -- cu -- lo -- rum, %405
+  a -- men, a --
+  men,
+  a -- _ _
+  _ men, a --
+  men, sae -- cu -- lo -- rum, %410
+  a -- men,
+
+  sae -- cu -- lo -- rum, a -- men, %414
+  sae -- cu -- lo -- rum, a -- men, %415
+  sae -- cu -- lo -- rum, __
+  a -- men, a --
+  men, a -- men, a -- men,
+
+  et in sae -- %421
+  cu -- la sae -- cu -- lo --
+  rum, a -- men, a -- men,
+  a -- men, a --
+  men, a -- men, a -- %425
+  men, a -- men,
+  a --
+  men. %428 finis
+}

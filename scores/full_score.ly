@@ -492,34 +492,113 @@
   %     \midi { \tempo 4 = 60 } % 240 – 110
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Gloria Patri"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #21
+  %     system-system-spacing.minimum-distance = #21
+  %     systems-per-page = #4
+  %   }
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \GloriaSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \GloriaSopranoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \GloriaOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \GloriaBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 2 = 120 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Gloria Patri"
+    \subsection "Et in sæcula"
     \addTocEntry
-    \paper {
-      system-system-spacing.basic-distance = #21
-      system-system-spacing.minimum-distance = #21
-      systems-per-page = #4
-    }
     \score {
       <<
+        \new StaffGroup <<
+          \new Staff {
+            \set Staff.instrumentName = "cnto"
+            \EtInCornetto
+          }
+          \new Staff {
+            \set Staff.instrumentName = "fag"
+            \EtInFagotto
+          }
+        >>
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "trb"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \EtInTromboneI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \EtInTromboneII
+            }
+          >>
+        >>
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \EtInViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \EtInViolinoII
+            }
+          >>
+        >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \GloriaSoprano }
+            \new Voice = "Soprano" { \dynamicUp \EtInSoprano }
           }
-          \new Lyrics \lyricsto Soprano \GloriaSopranoLyrics
+          \new Lyrics \lyricsto Soprano \EtInSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \EtInAlto }
+          }
+          \new Lyrics \lyricsto Alto \EtInAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \EtInTenore }
+          }
+          \new Lyrics \lyricsto Tenore \EtInTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \EtInBasso }
+          }
+          \new Lyrics \lyricsto Basso \EtInBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \GloriaOrgano
+            \EtInOrgano
           }
         >>
-        \new FiguredBass { \GloriaBassFigures }
+        \new FiguredBass { \EtInBassFigures }
       >>
       \layout { }
-      \midi { \tempo 2 = 120 }
+      \midi { \tempo 4 = 110 }
     }
   }
 }

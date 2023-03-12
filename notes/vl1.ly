@@ -338,3 +338,42 @@ SacrificiumViolinoI = {
     h1\fermata \bar "||" %370 finis
   }
 }
+
+EtInViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoEtIn
+      \set Score.currentBarNumber = #396
+    R1*3 %398
+    r2 g'4.\fE a8
+    b2 a8 g a h %400
+    c4. b16 a h8 a h cis
+    d a d2 cis4
+    d r a4. h8
+    c!2 b8 a b c
+    d4 d g,4. a8 %405
+    b!2 a8 d c d
+    h4. c16 d es8 f16 g c,4~
+    c8 d16 es f4~ f8 es16 f d8 c16 d
+    h8 h c c c4 h
+    c2 r %410
+    f,8 f16 e! f8 g a a r4
+    R1
+    r2 b4. c8
+    d2 c8 b c d
+    es4. d16 c d8 b f'4~ %415
+    f es2 d8 d
+    c2 d4 b
+    c8 c b b a4 a
+    g4. a8 b2
+    a8 g a b c4. b16 a %420
+    b8 a b c d4 d
+    R1
+    d4. e8 f!4 f
+    e d4. d8 cis cis
+    d d b4 c a %425
+    b8 a16 g d'2 c4~
+    c b a2
+    h1\fermata \bar "|." %428 finis
+  }
+}

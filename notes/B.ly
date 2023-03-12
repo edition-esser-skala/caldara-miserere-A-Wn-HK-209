@@ -596,3 +596,78 @@ SacrificiumBassoLyrics = \lyricmode {
   tu -- um vi -- tu --
   los. %370 finis
 }
+
+EtInBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoEtIn
+      \set Score.currentBarNumber = #396
+    r2 \mvTr d4.\fE^\tuttiE e!8
+    f!2 e8 d e fis
+    g4.( fis16[ e] fis8) d g4~
+    g fis g2
+    r f8 f16([ e]) f8 g %400
+    a2 g4 r8 g,
+    d' d16 d d8 d a4 a
+    d4. e8 f2
+    e8 d e fis g4 g
+    d2 c %405
+    g' d
+    g,8 g'[ f! g] es4. f16[ g]
+    as4. g16[ as] f2~
+    f8 f es c g'2
+    c,4 r g'4. a!8 %410
+    b2 a8 g a h
+    c4. b16([ a]) b8([ a b)] a16([ g)]
+    a2 g
+    f!4. g8 a2
+    g8 f g a b4 a %415
+    g2( f4) b
+    f2 b,4 b'(
+    a8) a g g d4 d
+    R1*2 %420
+    r2 d4. e8
+    f2 e8 d e fis
+    g2 f8([ e]) f[( g]
+    a4) d, a'2
+    d,4 g2 fis4 %425
+    g4 f es2
+    d4 d d2
+    g,1\fermata \bar "|." %428 finis
+  }
+}
+
+EtInBassoLyrics = \lyricmode {
+  Et in %396
+  sae -- cu -- la sae -- cu --
+  lo -- rum, a --
+  _ men,
+  sae -- cu -- lo -- rum, %400
+  a -- men, in
+  sae -- cu -- la sae -- cu -- lo -- rum,
+  et in sae --
+  cu -- la sae -- cu -- lo -- rum,
+  a -- _ %405
+  _ _
+  men, a -- _ _
+  _ _ _
+  men, a -- men, a --
+  men, et in %410
+  sae -- cu -- la sae -- cu --
+  lo -- rum, a -- men,
+  a -- men,
+  et in sae --
+  cu -- la sae -- cu -- lo -- rum, %415
+  a -- men,
+  a -- men, a --
+  men, a -- men, a -- men,
+
+  et in %421
+  sae -- cu -- la sae -- cu --
+  lo -- rum, a --
+  men, a --
+  men, a -- men, %425
+  a -- _ _
+  _ men, a --
+  men. %428 finis
+}

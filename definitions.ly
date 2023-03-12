@@ -22,6 +22,7 @@ tempoSacrificium = \tempoMarkup "[Adagio]"
   tempoBenigne = \tempoMarkup "Andante"
   tempoTuncImponent = \tempoMarkup "[Allegro]"
 tempoGloria = \tempoMarkup "[Larghetto]"
+tempoEtIn = \tempoMarkup "[Allegro]"
 
 
 \include "notes/cnto.ly"
