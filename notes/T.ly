@@ -380,3 +380,131 @@ DomineTenoreLyrics = \lyricmode {
   non de -- le -- cta -- be -- %305
   ris. %306 finis
 }
+
+SacrificiumTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoSacrificium
+      \set Score.currentBarNumber = #308
+    R1*2
+    r4 \mvTr d8\fE^\tutti d es4 es8 es %310
+    d2 d
+    d8. d16 d8 d d4. d8
+    c1
+    cis2 r4 a8 a
+    a2 b %315
+    d8 d d d es4 es
+    R1*2
+    \mvTr c2\fE^\tuttiE des4 c~
+    c c c4. c8 \noBreak %320
+    c1\fermata \bar "||"
+    \time 3/2 \tempoBenigne \newSpacingSection r2 r d \noBreak
+    c c c
+    d4. d8 d2 d
+    c c c4 c %325
+    b b c c d( b)
+    c2 c4 c c c
+    d2 d b
+    d4 d c2. c4
+    d2 r r %330
+    d d d
+    d d r
+    r d d
+    d4. d8 d2 d
+    d4. d8 d4 d d d %335
+    b b b2 es4 es \noBreak
+    d1 d2\fermata \bar "||"
+    \time 4/4 \tempoTuncImponent \newSpacingSection g,4. a8 b2 \noBreak
+    a8 g a h c4._( b?16[ a)]
+    b8 a b c d4 b %340
+    a4. a8 b2
+    b8 b16 a b8 c d4 d
+    r2 d8 d16 c d8 e
+    a,4 a a4. a8
+    a4 r r2 %345
+    g4. a8 b2
+    a8 g a h c4 c
+    d d d4. d8
+    d2 r
+    r8 c b c as4. g16([ f)] %350
+    g4 g g4. g8
+    g2 b!8 b16 a b8 c
+    d d r4 r2
+    R1*2 %355
+    a8 a16 g a8 b c4 c
+    b8 b16 a b8 c b4 c8 c
+    d4 b c d8.([ es16)]
+    f4. f8 f4 d
+    c8 c d d d4 d %360
+    R1*2
+    g,4. a8 b2
+    a8 g a h c2
+    b8 a b c d4 d %365
+    cis( d e4.) e8
+    d4 d es8 es d d
+    d d f!4 b, es
+    a, b8.([ c16)] d4. d8
+    d1\fermata \bar "||" %370 finis
+  }
+}
+
+SacrificiumTenoreLyrics = \lyricmode {
+  Sa -- cri -- fi -- ci -- um %310
+  De -- o
+  spi -- ri -- tus con -- tri -- bu --
+  la --
+  tus. Cor con --
+  tri -- tum %315
+  et hu -- mi -- li -- a -- tum,
+
+  De -- us, non __ %319
+  de -- spi -- ci -- %320
+  es.
+  Be --
+  ni -- gne fac,
+  Do -- mi -- ne, in
+  bo -- na vo -- lun -- %325
+  ta -- te tu -- a Si --
+  on, ut ae -- di -- fi --
+  cen -- tur mu --
+  ri Ie -- ru -- sa --
+  lem. %330
+  Tunc ac -- cep --
+  ta -- bis
+  sa -- cri --
+  fi -- ci -- um iu --
+  sti -- ti -- ae, ob -- la -- ti -- %335
+  o -- nes et ho -- lo --
+  cau -- sta.
+  Tunc im -- po --
+  nent su -- per al -- ta --
+  re, al -- ta -- re tu -- um %340
+  vi -- tu -- los,
+  su -- per al -- ta -- re tu -- um,
+  su -- per al -- ta -- re
+  tu -- um vi -- tu --
+  los, %345
+  tunc im -- po --
+  nent su -- per al -- ta -- re
+  tu -- um vi -- tu --
+  los,
+  su -- per al -- ta -- re %350
+  tu -- um vi -- tu --
+  los, su -- per al -- ta -- re
+  tu -- um,
+
+  su -- per al -- ta -- re tu -- um, %356
+  su -- per al -- ta -- re tu -- um, al --
+  ta -- re tu -- um __
+  vi -- tu -- los, su --
+  per al -- ta -- re tu -- um, %360
+
+  tunc im -- po -- %363
+  nent su -- per al -- ta --
+  re, al -- ta -- re tu -- um %365
+  vi -- tu --
+  los, su -- per al -- ta -- re
+  tu -- um, al -- ta -- re
+  tu -- um __ vi -- tu --
+  los. %370 finis
+}

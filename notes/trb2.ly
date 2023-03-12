@@ -160,3 +160,71 @@ CorMundumTromboneII = {
     h\fermata \bar "||" %276 finis
   }
 }
+
+SacrificiumTromboneII = {
+  \relative c' {
+    \clef tenor
+    \key g \dorian \time 4/4 \tempoSacrificium
+      \set Score.currentBarNumber = #308
+    d8\fE d d d d d c c
+    c c b b b b a a
+    b d d d es es es es %310
+    d d d d d d d d
+    d d d d d d d d
+    c c c c c c c c
+    cis cis cis cis a a a a
+    a a a a b b b b %315
+    d d d d g, g g g
+    R1*2
+    as8\fE as as as b b c c
+    f, f f f g g g g \noBreak %320
+    f1\fermata \bar "||"
+    \time 3/2 \tempoBenigne \newSpacingSection r2 r d' \noBreak
+    es4 es es es c c
+    d d d d d d
+    c c c c c c %325
+    b b c c d b
+    c c c c c c
+    b b b b b b
+    d d c c c c
+    d2 d d %330
+    d d r
+    r d d
+    d4. d8 d2 r
+    r r d
+    d4. d8 d4 d d d %335
+    b b b b es a, \noBreak
+    a1 a2\fermata \bar "||"
+    \time 4/4 \tempoTuncImponent \newSpacingSection g4. a8 b2 \noBreak
+    a8 g a h c4. b?16 a
+    b8 a b c d4 b %340
+    a4. a8 b2
+    b8 b16 a b8 c d4 d
+    r2 d8 d16 c d8 e
+    a,4 a a2
+    a4 r r2 %345
+    g4. a8 b2
+    a8 g a h c4 c
+    d d d2
+    d r
+    r8 c b c as4. g16 f %350
+    g4 g g2
+    g b!8 b16 a b8 c
+    d4 r r2
+    R1*2 %355
+    a8 a16 g a8 b c4 c
+    b8 b16 a b8 c b4 c8 c
+    d4 b c d8. es16
+    f4. f8 f4 d
+    c d d d %360
+    R1*2
+    g,4. a8 b2
+    a8 g a h c2
+    b8 a b c d4 d %365
+    cis d e2
+    d4 d es8 es d d
+    d d f!4 b, es
+    a, b8. c16 d2
+    d1\fermata \bar "||" %370 finis
+  }
+}

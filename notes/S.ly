@@ -385,15 +385,137 @@ DomineSopranoLyrics = \lyricmode {
   am. %292 finis
 }
 
+SacrificiumSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoSacrificium
+      \set Score.currentBarNumber = #308
+    R1*2
+    r4 \mvTr b'8\fE^\tutti b b4 b8 b %310
+    b2 b
+    as8. as16 as8 as as4. as8
+    g1
+    g2 r4 f8 f
+    fis2 g %315
+    as8 as as as g4 g
+    \mvTr es'2\pE^\solo des
+    c8 c f2 e4
+    f \mvTr f\fE^\tutti b, c8 c
+    as2( g4.) g8 \noBreak %320
+    a1\fermata \bar "||"
+    \time 3/2 \tempoBenigne \newSpacingSection r2 r b \noBreak
+    b b a
+    b4. b8 b2 b
+    c c c4 c %325
+    d d c c b2
+    a a4 a a a
+    b2 b b
+    b4 b b2. a4
+    b2 r r %330
+    b b a^\critnote
+    b b r
+    r b a
+    b4. b8 b2 a
+    b4. b8 b4 b b b %335
+    b b b2 a4 a \noBreak
+    a1 a2\fermata \bar "||"
+    \time 4/4 \tempoTuncImponent \newSpacingSection
+      R1*3 %340
+    r2 g4. a8
+    b2 a8 g a h
+    c4._( b16[ a]) h8 a h cis
+    d a d2 cis4
+    d r a4. h8 %345
+    c!2 b8 a b c
+    d4 d g,4. a8
+    b!2 a8 d c d
+    h4. c16[ d] es8[ f16 g] c,4~
+    c8[ d16 es] f4~ f8[ es16 f] d8[ c16 d] %350
+    h8 h c c c4 h
+    c2 r
+    f,8 f16 e! f8 g a a r4
+    R1
+    r2 b4. c8 %355
+    d2 c8 b c d
+    es4.( d16[ c)] d8 b f'4~
+    f es2 d8 d
+    c4. c8 d4 b
+    c8 c b b a4 a %360
+    g4. a8 b2
+    a8 g a b c4._( b16[ a)]
+    b8 a b c d4 d
+    R1
+    d4. e8 f!2 %365
+    e4 d4. d16 d cis8 cis
+    d d b4 c8 c a a
+    b a16 g d'4. d8 c4~
+    c b a4. a8 \noBreak
+    h1\fermata \bar "||" %370 finis
+  }
+}
 
+SacrificiumSopranoLyrics = \lyricmode {
+  Sa -- cri -- fi -- ci -- um %310
+  De -- o
+  spi -- ri -- tus con -- tri -- bu --
+  la --
+  tus. Cor con --
+  tri -- tum %315
+  et hu -- mi -- li -- a -- tum,
+  De -- us,
+  non de -- spi -- ci --
+  es, De -- us, non de --
+  spi -- ci -- %320
+  es.
+  Be --
+  ni -- gne fac,
+  Do -- mi -- ne, in
+  bo -- na vo -- lun -- %325
+  ta -- te tu -- a Si --
+  on, ut ae -- di -- fi --
+  cen -- tur mu --
+  ri Ie -- ru -- sa --
+  lem. %330
+  Tunc ac -- cep --
+  ta -- bis
+  sa -- cri --
+  fi -- ci -- um iu --
+  sti -- ti -- ae, ob -- la -- ti -- %335
+  o -- nes et ho -- lo --
+  cau -- sta.
 
-% Sa -- cri -- fi -- ci -- um De -- o spi -- ri -- tus con -- tri -- bu -- la -- tus;
-% cor con -- tri -- tum et hu -- mi -- li -- a -- tum, De -- us, non de -- spi -- ci -- es.
-% Be -- ni -- gne fac, Do -- mi -- ne, in bo -- na vo -- lun -- ta -- te tu -- a Si -- on,
-% ut ae -- di -- fi -- cen -- tur mu -- ri Ie -- ru -- sa -- lem.
-% Tunc ac -- cep -- ta -- bis sa -- cri -- fi -- ci -- um iu -- sti -- ti -- ae,
-% ob -- la -- ti -- o -- nes et ho -- lo -- cau -- sta;
-% tunc im -- po -- nent su -- per al -- ta -- re tu -- um vi -- tu -- los.
+  Tunc im -- %341
+  po -- nent su -- per al --
+  ta -- re, al -- ta -- re
+  tu -- um vi -- tu --
+  los, tunc im -- %345
+  po -- nent su -- per al --
+  ta -- re, tunc im --
+  po -- nent su -- per al --
+  ta -- _ _ _
+  _ _ %350
+  _ re tu -- um vi -- tu --
+  los,
+  su -- per al -- ta -- re tu -- um,
+
+  tunc im -- %355
+  po -- nent su -- per al --
+  ta -- re, al -- ta --
+  re tu -- um
+  vi -- tu -- los, su --
+  per al -- ta -- re tu -- um, %360
+  tunc im -- po --
+  nent su -- per al -- ta --
+  re, al -- ta -- re tu -- um,
+
+  tunc im -- po -- %365
+  nent su -- per al -- ta -- re
+  tu -- um, su -- per al -- ta -- re
+  tu -- um, al -- ta -- re tu --
+  um vi -- tu --
+  los. %370 finis
+}
+
 % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
 % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
 % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.

@@ -160,3 +160,70 @@ CorMundumTromboneI = {
     d\fermata \bar "||" %276 finis
   }
 }
+
+SacrificiumTromboneI = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoSacrificium
+      \set Score.currentBarNumber = #308
+    f8\fE f f f es es es es
+    d d d d c c c c
+    d f f f g g g g %310
+    f f f f f f f f
+    f f f f f f f f
+    es es es es g g g g
+    e e e e f f f f
+    c! c c c d d d d %315
+    f f f f c c c c
+    R1*2
+    c8\fE^\critnote c c c des des c c
+    c c c c c c c c \noBreak %320
+    c1\fermata \bar "||"
+    \time 3/2 \tempoBenigne \newSpacingSection r2 r f4 f \noBreak
+    g g g g f f
+    f f f f f f
+    f f f f f f %325
+    f f f f f e!
+    f f f f f f
+    f f f f g g
+    b f f f f f
+    f2 g a %330
+    b b r
+    r g a
+    g4. g8 g2 r
+    r r a
+    g4. g8 g4 g a^\critnote a %335
+    g g g g es es \noBreak
+    d1 d2\fermata \bar "||"
+    \time 4/4 \tempoTuncImponent \newSpacingSection R1*4 %341
+    d4. e!8 f!2
+    e8 d e fis g4. f?16 e
+    f!8 e f e16 d e4. e8
+    f4 r r2 %345
+    r d4. e8
+    f2 e8 d e fis
+    g d g4. g8 fis8. fis16
+    g2 r8 g f g
+    es f16 g as4. g16 as f8 es16 f %350
+    d8 d es es d8. d16 d4
+    c4. d8 es2
+    d8. c16 d8 e f4. e16 d
+    e8 d e fis g d g4~
+    g fis g2 %355
+    R1
+    r2 f4. a8
+    b2 a4 b~
+    b8 b16 b a8 a b b g4
+    fis8 fis g g fis4 fis %360
+    r2 d4. e!8
+    f!2 e8 d e fis
+    g4 g r2
+    r g4. a8
+    b2 a %365
+    a8 a16 a a8 a a4. g8
+    fis4 g a8 a a a
+    g4 a8 a g4. g8
+    fis d g2 fis4
+    g1\fermata \bar "||" %370 finis
+  }
+}

@@ -19,6 +19,8 @@ tempoCorMundum = \tempoMarkup "[Adagio]"
   tempoNeProicias = \tempoMarkup "[Vivace]"
 tempoDomine = \tempoMarkup "[Andante]"
 tempoSacrificium = \tempoMarkup "[Adagio]"
+  tempoBenigne = \tempoMarkup "Andante"
+  tempoTuncImponent = \tempoMarkup "[Allegro]"
 
 
 \include "notes/cnto.ly"

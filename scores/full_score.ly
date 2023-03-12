@@ -365,52 +365,131 @@
   %     \midi { \tempo 4 = 60 } % 300
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Domine, labia mea"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #30
+  %     system-system-spacing.minimum-distance = #30
+  %     systems-per-page = #2
+  %   }
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \DomineSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \DomineSopranoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \DomineAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \DomineAltoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \DomineTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \DomineTenoreLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \DomineBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \DomineBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \DomineOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \DomineBassFigures }
+  %     >>
+  %     \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
+  %     \midi { \tempo 4 = 60 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Domine, labia mea"
+    \subsection "Sacrificium · Benigne · Tunc imponent"
     \addTocEntry
-    \paper {
-      system-system-spacing.basic-distance = #30
-      system-system-spacing.minimum-distance = #30
-      systems-per-page = #2
-    }
     \score {
       <<
+        \new StaffGroup <<
+          \new Staff {
+            \set Staff.instrumentName = "cnto"
+            \SacrificiumCornetto
+          }
+          \new Staff {
+            \set Staff.instrumentName = "fag"
+            \SacrificiumFagotto
+          }
+        >>
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "trb"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \SacrificiumTromboneI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \SacrificiumTromboneII
+            }
+          >>
+        >>
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \SacrificiumViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \SacrificiumViolinoII
+            }
+          >>
+        >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \DomineSoprano }
+            \new Voice = "Soprano" { \dynamicUp \SacrificiumSoprano }
           }
-          \new Lyrics \lyricsto Soprano \DomineSopranoLyrics
+          \new Lyrics \lyricsto Soprano \SacrificiumSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \DomineAlto }
+            \new Voice = "Alto" { \dynamicUp \SacrificiumAlto }
           }
-          \new Lyrics \lyricsto Alto \DomineAltoLyrics
+          \new Lyrics \lyricsto Alto \SacrificiumAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \DomineTenore }
+            \new Voice = "Tenore" { \dynamicUp \SacrificiumTenore }
           }
-          \new Lyrics \lyricsto Tenore \DomineTenoreLyrics
+          \new Lyrics \lyricsto Tenore \SacrificiumTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \DomineBasso }
+            \new Voice = "Basso" { \dynamicUp \SacrificiumBasso }
           }
-          \new Lyrics \lyricsto Basso \DomineBassoLyrics
+          \new Lyrics \lyricsto Basso \SacrificiumBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \DomineOrgano
+            \SacrificiumOrgano
           }
         >>
-        \new FiguredBass { \DomineBassFigures }
+        \new FiguredBass { \SacrificiumBassFigures }
       >>
-      \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
-      \midi { \tempo 4 = 60 }
+      \layout { }
+      \midi { \tempo 4 = 60 } % 240 – 110
     }
   }
 }

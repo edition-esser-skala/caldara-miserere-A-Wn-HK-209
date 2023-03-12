@@ -466,3 +466,133 @@ DomineBassoLyrics = \lyricmode {
   non de -- le -- cta -- be -- %305
   ris. %306 finis
 }
+
+SacrificiumBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoSacrificium
+      \set Score.currentBarNumber = #308
+    R1*2
+    r4 \mvTr b8\fE^\tutti b b4 b8 b %310
+    b2 b
+    h8. h16 h8 h h4. h8
+    c2( b)
+    a r4 d8 d
+    c!2 b %315
+    h8 h h h c4 c
+    R1*2
+    r4 \mvTr f2\fE^\tuttiE e!4
+    f f c4. c8 \noBreak %320
+    f1\fermata \bar "||"
+    \time 3/2 \tempoBenigne \newSpacingSection r2 r b, \noBreak
+    es es f
+    b,4. b8 b2 b'
+    a a a4 a %325
+    b b a a g2
+    f f4 f f f
+    d2 d es
+    b4 b f'2. f4
+    b,2 r r %330
+    g b d
+    g, g r
+    r g d'
+    g4. g8 g2 d
+    g4. g8 g4 g d d %335
+    es es b2 c4 c \noBreak
+    d1 d2\fermata \bar "||"
+    \time 4/4 \tempoTuncImponent \newSpacingSection r2 d4. e!8 \noBreak
+    f!2 e8 d e fis
+    g4. fis16([ e)] fis8 d g4~ %340
+    g fis g2
+    r f8 f16 e f8 g
+    a2 g4 r8 g,
+    d' d d d a8. a16 a4
+    d4. e8 f2 %345
+    e8 d e fis g4 g
+    d2 c
+    g'( d4.) d8
+    g, g' f! g es4. f16[ g]
+    as4. g16[ as] f2~ %350
+    f8 f es c g'4. g8
+    c,4 r g'4. a!8
+    b2 a8 g a h
+    c4. b16([ a]) b8([ a)] b8([ a16 g)]
+    a4. a8 g2 %355
+    f!4. g8 a2
+    g8 f g a b4 a
+    g2( f4) b
+    f4. f8 b,4 b'
+    a8 a g g d4 d %360
+    R1*2
+    r2 d4. e8
+    f2 e8 d e fis
+    g2 f8 e f g %365
+    a4 d, a'4. a8
+    d,4 g4. g16 g fis8 fis
+    g4 f8 f es4. es8
+    d4 d d4. d8
+    g,1\fermata \bar "||" %370 finis
+  }
+}
+
+SacrificiumBassoLyrics = \lyricmode {
+  Sa -- cri -- fi -- ci -- um %310
+  De -- o
+  spi -- ri -- tus con -- tri -- bu --
+  la --
+  tus. Cor con --
+  tri -- tum %315
+  et hu -- mi -- li -- a -- tum,
+
+  De -- us,
+  non de -- spi -- ci -- %320
+  es.
+  Be --
+  ni -- gne fac,
+  Do -- mi -- ne, in
+  bo -- na vo -- lun -- %325
+  ta -- te tu -- a Si --
+  on, ut ae -- di -- fi --
+  cen -- tur mu --
+  ri Ie -- ru -- sa --
+  lem. %330
+  Tunc ac -- cep --
+  ta -- bis
+  sa -- cri --
+  fi -- ci -- um iu --
+  sti -- ti -- ae, ob -- la -- ti -- %335
+  o -- nes et ho -- lo --
+  cau -- sta.
+  Tunc im --
+  po -- nent su -- per al --
+  ta -- re tu -- um vi -- %340
+  tu -- los,
+  su -- per al -- ta -- re
+  tu -- um, al --
+  ta -- re tu -- um vi -- tu -- los,
+  tunc im -- po -- %345
+  nent su -- per al -- ta -- re
+  tu -- um
+  vi -- tu --
+  los, su -- per al -- ta -- _
+  _ _ _ %350
+  re tu -- um vi -- tu --
+  los, tunc im --
+  po -- nent su -- per al --
+  ta -- re tu -- um __
+  vi -- tu -- los, %355
+  tunc im -- po --
+  nent su -- per al -- ta -- re
+  tu -- um
+  vi -- tu -- los, su --
+  per al -- ta -- re tu -- um, %360
+
+  tunc im -- %363
+  po -- nent su -- per al --
+  ta -- re, al -- ta -- re %365
+  tu -- um vi -- tu --
+  los, su -- per al -- ta -- re
+  tu -- um, al -- ta -- re
+  tu -- um vi -- tu --
+  los. %370 finis
+}

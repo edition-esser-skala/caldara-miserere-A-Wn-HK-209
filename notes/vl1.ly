@@ -268,3 +268,73 @@ CorMundumViolinoI = {
     g1.\fermata \bar "||" %276 finis
   }
 }
+
+SacrificiumViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoSacrificium
+      \set Score.currentBarNumber = #308
+    f8\fE f f f es es es es
+    d d d d c c c c
+    d f f f g g g g %310
+    f f f f f f f f
+    as as as as as as as as
+    g g g g g g g g
+    g g g g f f f f
+    fis fis fis fis g g g g %315
+    as as as as g g g g
+    es\p es es es f f g g
+    e e f f b b b b
+    as\f as as as g g g g
+    as as as as g g g g \noBreak %320
+    a a a a a2\fermata \bar "||"
+    \time 3/2 \tempoBenigne \newSpacingSection r2 r b \noBreak
+    c4  c c c f f
+    d f f f f f
+    f f f f f f %325
+    f f f f f e!
+    f f f f f f
+    b b b b b b
+    b b b b b a
+    b2 b a %330
+    g g r
+    r g fis
+    g4. g8 g2 r
+    r r fis
+    g4. g8 g4 g fis fis %335
+    g g g g a a \noBreak
+    fis1 fis2\fermata \bar "||"
+    \time 4/4 \tempoTuncImponent \newSpacingSection
+      R1*3 %340
+    r2 g,4. a8
+    b2 a8 g a h
+    c4. b16 a h8 a h cis
+    d a d2 cis4
+    d r a4. h8 %345
+    c!2 b8 a b c
+    d4 d g,4. a8
+    b!2 a8 d c d
+    h4. c16 d es8 f16 g c,4~
+    c8 d16 es f4~ f8 es16 f d8 c16 d %350
+    h8 h c c c4 h
+    c2 r
+    f,8 f16 e! f8 g a a r4
+    R1
+    r2 b4. c8 %355
+    d2 c8 b c d
+    es4. d16 c d8 b f'4~
+    f es2 d8 d
+    c4. c8 d4 b
+    c8 c b b a4 a %360
+    g4. a8 b2
+    a8 g a b c4. b16 a
+    b8 a b c d4 d
+    R1
+    d4. e8 f!2 %365
+    e4 d4. d16 d cis8 cis
+    d d b4 c8 c a a
+    b a16 g d'4. d8 c4~
+    c b a4. a8 \noBreak
+    h1\fermata \bar "||" %370 finis
+  }
+}

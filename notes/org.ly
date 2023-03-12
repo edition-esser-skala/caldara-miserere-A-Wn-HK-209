@@ -691,19 +691,150 @@ DomineBassFigures = \figuremode {
   r %307 finis
 }
 
+SacrificiumOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \tempoSacrificium
+      \set Score.currentBarNumber = #308
+    \mvTr b8\fE-\soloE b b b c c c c
+    g' g g g es es f f
+    b, b b-\tuttiE b b b b b %310
+    b b b b b b b b
+    h h h h h h h h
+    c c c c b b b b
+    a a a a d d d d
+    c! c c c b b b b %315
+    h h h h c2
+    R1*2
+    \mvTr f8\fE-\tuttiE f f f f f e! e
+    f f f f c c c c \noBreak %320
+    f, f f f f2\fermata \bar "||"
+    \time 3/2 \tempoBenigne \newSpacingSection b1 b2 \noBreak
+    es es f
+    b, b b'
+    a a a %325
+    b a g
+    f1 f2
+    d1 es2
+    b f' f,
+    b g d' %330
+    g, b d
+    g, g d'
+    g, g d'
+    g, b d
+    g g, d' %335
+    es b c \noBreak
+    d1.\fermata \bar "||"
+    \time 4/4 \tempoTuncImponent \newSpacingSection
+    << {
+      g4. a8 b2
+      a8 g a h c4. b?16 a
+      b8 a b c d4 b %340
+      a2 s
+    } \\ {
+      r2 d,4. e!8 \noBreak
+      f!2 e8 d e fis
+      g4. fis16 e fis8 d g4~ %340
+      g fis g2
+    } >>
+    g d8 d16 e f8 g
+    a2 g4 g,
+    d'2 a
+    d4. e8 f2 %345
+    e8 d e fis g2
+    d c
+    g d'
+    g,8 g' f! g es2
+    as4. g16 as f2~ %350
+    f4 es8 c g'4 g,
+    c2 g'4. a!8
+    b2 a8 g a h
+    c4. b16 a b8 a b a16 g
+    a2 g %355
+    f!4. g8 a2
+    g8 f g a b4 a
+    g2 f4 b
+    f f, b b'
+    a g d2 %360
+    \clef treble << {
+      g'4. a8 b2
+      a8 g a b c4. b16 a
+     } \\ {
+      r2 d,4. e!8
+      f!2 e8 d e fis
+     } >>
+    \clef "treble_8" g,4. a8 \clef bass d,4. e8
+    f2 e8 d e fis
+    g2 f8 e f g %365
+    a4 d, a' a,
+    d g2 fis4
+    g f es2
+    d1
+    g,\fermata \bar "||" %370
+  }
+}
 
-%     \key f \major \time 4/4 \tempoSacrificum \newSpacingSection
-%       \mvTr b8\fE-\tutti b b b c c c c \noBreak
-%     g' g g g es es f f
-%     b, b b b b b b b
-%     b b b b b b b b
-%     h h h h h h h h
-%     c c c c b b b b
-%     a a a a d d d d
-%     c c c c b b b b
-%     g g g g c2
-%     R1*2
-%     f8 f f f f f e e
-%     f f f f c c c c \noBreak
-%     f, f f f f2\fermata \bar "||"
-%     \time 3/2
+SacrificiumBassFigures = \figuremode {
+  r2 <10- 9>4 <\t 8> %308
+  <5 4> <\t 3> <6 5>2
+  r <6 4-> %310
+  <5 3>1
+  <7->
+  <_->2 <6 4! 2>
+  <7 _+> <_!>
+  <6 4\+ _-> <6> %315
+  <7-> <_->
+  r1*2
+  <_->2 \bo<[6-] 4 2>4 <6>
+  \bc <[_-]>2 <4>4 <_!> %320
+  <_!>1
+  r1.
+  <6 5>
+  r
+  <6> %325
+  r2 <[6]> <7>4 <6!>
+  r1.
+  <6>
+  r2 <4> <\t>4 <3>
+  r1 <_+>2 %330
+  r1 <_+>2
+  r1 <_+>2
+  r1 <[_+]>2
+  r1 <_+>2
+  r1 <6 _+>2 %335
+  r <6> <6 [_-]>
+  <_+>1.
+  r1
+  r
+  r %340
+  r
+  \bo <5 [3]>4. \bc <6! [4]>8 \bo <[_!]>4. \bc <[7] _!>8
+  <5>4. <6\\>8 <_!>4 <5 _!>8 <6 4\+>
+  <_!>2 <4>4 <_+>
+  r2 <[5] 3>4. <6 4!>8 %345
+  <[6!]>2 \bo <5 [_-]>4. \bc <6 [4]>8
+  <5 _!>4. <6!>8 <[5] 3>4. <6 4\+>8
+  <_->2 <4>4 <_+>
+  <_!>2 <6>
+  <5->4 <6> \bo <5 [_-]> \bc <6 [\t]> %350
+  <4! 2> \bo <[6]>8 \bc <[_-]> <4>4 <_!>
+  <_->2 <6- [_-]>4. <\t>8
+  <[5 3]>4. <6 4!>8 <6>2
+  <3>4. <5\+>8 <6>2
+  <7>4 <6\\>2. %355
+  <6>2 <6>
+  <6->2. <6>4
+  <7> <6-> <7->2
+  <4>4 <3>2 <6>4
+  <6\\>2 <_+> %360
+  r1
+  r
+  r2 <6>
+  \bo <[3]>4. \bc <[4!]>8 <6>2
+  <5 [_-]>4. <6>8 q2 %365
+  <_+>2 <4>4 <_+>
+  q <[3]> <[6-] 4! 2> <[6]>
+  r <6> <7> <6>
+  <7 _+> <6 4> <5 \t> <\t _+>
+  <_!>1 %370 finis
+}
