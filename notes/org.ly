@@ -838,3 +838,64 @@ SacrificiumBassFigures = \figuremode {
   <7 _+> <6 4> <5 \t> <\t _+>
   <_!>1 %370 finis
 }
+
+GloriaOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 3/2 \tempoGloria
+      \set Score.currentBarNumber = #371
+    \mvTr c1.\pE-\solo
+    h2 c d
+    es f1
+    g2 g f
+    e!1. %375
+    f~
+    f2 es c
+    des1.
+    c
+    f2 b, c %380
+    f, f' es!
+    d! b d
+    es es d
+    c1.
+    r2 d c %385
+    h1.
+    c
+    f~
+    f1 g2
+    c, d es %390
+    f g g,
+    c c' b!
+    as g f
+    g f g
+    c,1.\fermata \bar "||" %395 finis
+  }
+}
+
+GloriaBassFigures = \figuremode {
+  <_->1. %371
+  \bo <[6]>2 \bc <[_-]> <6!>
+  <6> <6 _->1
+  <_!> <\t>2
+  \bo <[6]>1 \bc <[5-]>2 %375
+  <_->1.
+  <2>2 \bo <[6]> <_->
+  <7> \bc <[6-]>1
+  <7 _!>2 \bo <[6- 4]>2 \bc <[5 _!]>
+  <_-> <6 5 [_-]> <_!> %380
+  \bo <[_-]>1 \bc <[\t]>2
+  <6>1 <5->2
+  r1.
+  \bo <6- [_-]>1 \bc <5 [_-]>2
+  r <5-> <6- 4> %385
+  \bo <[6]>1 \bc <[5]>2
+  <_->1.
+  q
+  \bo <6 [_-]>2 \bc <5 [\t]> <_!>
+  \bo <[_- _]> <6!> <6> %390
+  <5 _->4 <6 \t> <_!>1
+  <_-> <4! 2>2
+  <6> <6- 4> <6 _->
+  <6- 4> <6 _-> <_!>
+  \bc <[_- _]>1. %395 finis
+}

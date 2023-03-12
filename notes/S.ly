@@ -516,6 +516,62 @@ SacrificiumSopranoLyrics = \lyricmode {
   los. %370 finis
 }
 
-% Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
-% si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
+
+GloriaSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 3/2 \autoBeamOff \tempoGloria
+      \set Score.currentBarNumber = #371
+    \mvTr c'2.\pE^\solo d4 es2
+    d c h
+    c d1
+    g, r2
+    r c b! %375
+    as2. g4 f2
+    g c1~
+    c2 b!4 as b2~
+    b as g
+    as g1 %380
+    f r2
+    r b as
+    g1 g2
+    as1 g2
+    f2. f4 f2 %385
+    g g f
+    es c'4 b as g
+    as2 g f
+    d' c h
+    es d c~ %390
+    c4 d h1
+    c r2
+    R1.*2
+    R1.\fermata \bar "||" %395 finis
+  }
+}
+
+GloriaSopranoLyrics = \lyricmode {
+  Glo -- ri -- a %371
+  Pa -- tri et
+  Fi -- li --
+  o
+  et Spi -- %375
+  ri -- tu -- i
+  San -- _
+  _ _ _
+  _ _
+  _ _ %380
+  cto,
+  si -- cut
+  e -- rat
+  in prin --
+  ci -- pi -- o %385
+  et nunc et
+  sem -- _ _ _ _
+  _ _ _
+  _ _ _
+  _ _ _ %390
+  _ _
+  per. %392 finis
+}
+
 % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.

@@ -413,83 +413,113 @@
   %     \midi { \tempo 4 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Sacrificium · Benigne · Tunc imponent"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "cnto"
+  %           \SacrificiumCornetto
+  %         }
+  %         \new Staff {
+  %           \set Staff.instrumentName = "fag"
+  %           \SacrificiumFagotto
+  %         }
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "trb"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \SacrificiumTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \SacrificiumTromboneII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \SacrificiumViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \SacrificiumViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \SacrificiumSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \SacrificiumSopranoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \SacrificiumAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \SacrificiumAltoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \SacrificiumTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \SacrificiumTenoreLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \SacrificiumBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \SacrificiumBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \SacrificiumOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \SacrificiumBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 } % 240 – 110
+  %   }
+  % }
   \bookpart {
-    \subsection "Sacrificium · Benigne · Tunc imponent"
+    \subsection "Gloria Patri"
     \addTocEntry
+    \paper {
+      system-system-spacing.basic-distance = #21
+      system-system-spacing.minimum-distance = #21
+      systems-per-page = #4
+    }
     \score {
       <<
-        \new StaffGroup <<
-          \new Staff {
-            \set Staff.instrumentName = "cnto"
-            \SacrificiumCornetto
-          }
-          \new Staff {
-            \set Staff.instrumentName = "fag"
-            \SacrificiumFagotto
-          }
-        >>
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "trb"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \SacrificiumTromboneI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \SacrificiumTromboneII
-            }
-          >>
-        >>
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "vl"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \SacrificiumViolinoI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \SacrificiumViolinoII
-            }
-          >>
-        >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \SacrificiumSoprano }
+            \new Voice = "Soprano" { \dynamicUp \GloriaSoprano }
           }
-          \new Lyrics \lyricsto Soprano \SacrificiumSopranoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \SacrificiumAlto }
-          }
-          \new Lyrics \lyricsto Alto \SacrificiumAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \SacrificiumTenore }
-          }
-          \new Lyrics \lyricsto Tenore \SacrificiumTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \SacrificiumBasso }
-          }
-          \new Lyrics \lyricsto Basso \SacrificiumBassoLyrics
+          \new Lyrics \lyricsto Soprano \GloriaSopranoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \SacrificiumOrgano
+            \GloriaOrgano
           }
         >>
-        \new FiguredBass { \SacrificiumBassFigures }
+        \new FiguredBass { \GloriaBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 } % 240 – 110
+      \midi { \tempo 2 = 120 }
     }
   }
 }
